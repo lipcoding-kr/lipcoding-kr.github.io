@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Tag, Filter, Clock } from "lucide-react";
@@ -43,16 +42,16 @@ const BlogPosts = () => {
     <section className="py-20 bg-white">
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap items-center justify-between mb-12">
-          <h2 className="text-3xl font-bold text-primary">Latest Articles</h2>
+          <h2 className="text-3xl font-bold text-secondary-dark uppercase">Latest Articles</h2>
           <div className="flex gap-2 mt-4 md:mt-0">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm transition-all ${
+                className={`px-4 py-2 text-sm transition-all ${
                   selectedCategory === category
                     ? "bg-primary text-white"
-                    : "bg-secondary text-primary-muted hover:bg-primary/10"
+                    : "bg-secondary text-secondary-dark hover:bg-primary-muted hover:text-white"
                 }`}
               >
                 {category}
@@ -68,25 +67,24 @@ const BlogPosts = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="group cursor-pointer"
+              className="group cursor-pointer border-2 border-secondary-dark"
             >
-              <div className="relative overflow-hidden rounded-lg mb-4">
+              <div className="relative overflow-hidden">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-48 object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />
+                <div className="absolute top-0 left-0 bg-primary px-3 py-1">
+                  <span className="text-white text-sm">{post.category}</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2 mb-2">
-                <Tag size={16} className="text-primary-muted" />
-                <span className="text-sm text-primary-muted">{post.category}</span>
-                <Clock size={16} className="text-primary-muted ml-2" />
-                <span className="text-sm text-primary-muted">{post.readTime}</span>
+              <div className="p-6 bg-white">
+                <h3 className="text-xl font-bold text-secondary-dark mb-2 uppercase group-hover:text-primary">
+                  {post.title}
+                </h3>
+                <p className="text-secondary-dark/80">{post.description}</p>
               </div>
-              <h3 className="text-xl font-semibold text-primary mb-2 group-hover:text-primary/80">
-                {post.title}
-              </h3>
-              <p className="text-primary-muted">{post.description}</p>
             </motion.article>
           ))}
         </div>

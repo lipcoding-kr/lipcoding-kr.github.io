@@ -29,11 +29,12 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#1D1D1F",
-          muted: "#86868B",
+          DEFAULT: "#E53935", // Bauhaus red
+          muted: "#2196F3", // Bauhaus blue
         },
         secondary: {
-          DEFAULT: "#F5F5F7",
+          DEFAULT: "#FFEB3B", // Bauhaus yellow
+          dark: "#1A1A1A", // Near black for contrast
         },
       },
       keyframes: {

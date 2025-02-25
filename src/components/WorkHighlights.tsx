@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ExternalLink, ArrowRight } from "lucide-react";
 
@@ -28,7 +27,7 @@ const projects = [
 
 const WorkHighlights = () => {
   return (
-    <section className="py-20 bg-secondary">
+    <section className="py-20 bg-secondary-dark">
       <div className="container px-4 mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,8 +35,8 @@ const WorkHighlights = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-bold text-primary mb-4">Selected Work</h2>
-          <p className="text-primary-muted max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4 uppercase">Selected Work</h2>
+          <p className="text-white/80 max-w-2xl mx-auto">
             A showcase of my recent projects and collaborations, demonstrating my approach to design and problem-solving.
           </p>
         </motion.div>
@@ -52,24 +51,23 @@ const WorkHighlights = () => {
             >
               <a 
                 href={project.link}
-                className="block group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
+                className="block group bg-white border-2 border-primary overflow-hidden"
               >
                 <div className="relative overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105 grayscale hover:grayscale-0"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
+                  <div className="absolute top-0 right-0 bg-primary p-2">
+                    <ExternalLink size={18} className="text-white" />
+                  </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-semibold text-primary group-hover:text-primary/80">
-                      {project.title}
-                    </h3>
-                    <ExternalLink size={18} className="text-primary-muted group-hover:text-primary transition-colors" />
-                  </div>
-                  <p className="text-primary-muted mb-4">
+                  <h3 className="text-xl font-bold text-secondary-dark mb-2 uppercase group-hover:text-primary">
+                    {project.title}
+                  </h3>
+                  <p className="text-secondary-dark/80 mb-4">
                     {project.description}
                   </p>
                   <div className="flex items-center text-primary font-medium group-hover:translate-x-1 transition-transform">
