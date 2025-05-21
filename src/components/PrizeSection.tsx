@@ -145,8 +145,8 @@ const PrizeSection = () => {
               <CardContent className="text-black space-y-4">
                 <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                    alt="Keyboard and mouse" 
+                    src="/lovable-uploads/f4123bcd-57ba-4738-a70a-a9c4113b0778.png" 
+                    alt="Microsoft keyboard and mouse" 
                     className="object-contain w-full h-full"
                   />
                 </AspectRatio>
