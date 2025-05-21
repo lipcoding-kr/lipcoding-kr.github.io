@@ -1,7 +1,6 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
-import { HandshakeIcon } from "lucide-react";
 
 const sponsors = [
   {
@@ -51,9 +50,6 @@ const SponsorsSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h3 className="text-xl font-semibold text-blue-400 mb-8 text-center flex justify-center items-center">
-            <HandshakeIcon className="h-5 w-5 mr-2" /> Platinum 스폰서
-          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {sponsors
               .filter((sponsor) => sponsor.level === "Platinum")
