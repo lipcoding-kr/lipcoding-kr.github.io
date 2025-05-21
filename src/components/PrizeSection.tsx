@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Trophy, Gift, Star, Award, Medal, Gamepad2, GamepadIcon, Keyboard, Mouse, Headphones } from "lucide-react";
+import { Trophy, Gift, Star, Award, Medal, Gamepad2 } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 const PrizeSection = () => {
@@ -38,7 +38,7 @@ const PrizeSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {/* First Prize Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -54,8 +54,8 @@ const PrizeSection = () => {
               <CardContent className="text-black">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>상품: 최신형 개발자 워크스테이션</span>
+                    <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
+                    <span>상품: 엑스박스</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
@@ -75,14 +75,14 @@ const PrizeSection = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
               <CardHeader className="pb-2">
                 <CardTitle className="flex items-center gap-2 text-primary">
-                  <Award className="h-5 w-5" /> 최우수상 (2명)
+                  <Award className="h-5 w-5" /> 최우수상 (1명)
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-black">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>상품: 고급 노이즈 캔슬링 헤드셋</span>
+                    <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
+                    <span>상품: 닌텐도스위치</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
@@ -102,18 +102,45 @@ const PrizeSection = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
               <CardHeader className="pb-2">
                 <CardTitle className="flex items-center gap-2 text-primary">
-                  <Medal className="h-5 w-5" /> 우수상 (5명)
+                  <Medal className="h-5 w-5" /> 우수상 (1명)
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-black">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>개발자 굿즈 패키지</span>
+                    <span>상품: 에어팟 프로</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>GitHub Copilot 3개월 무료 라이센스</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </motion.div>
+          
+          {/* Fourth Prize Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
+              <CardHeader className="pb-2">
+                <CardTitle className="flex items-center gap-2 text-primary">
+                  <Medal className="h-5 w-5" /> 장려상 (1명)
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-black">
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
+                    <span>상품: 키보드/마우스</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
+                    <span>GitHub Copilot 1개월 무료 라이센스</span>
                   </li>
                 </ul>
               </CardContent>
