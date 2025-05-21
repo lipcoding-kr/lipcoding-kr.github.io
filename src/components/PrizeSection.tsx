@@ -5,7 +5,7 @@ import { Trophy, Gift, Star, Award, Medal } from "lucide-react";
 
 const PrizeSection = () => {
   return (
-    <section className="relative py-24 bg-[#1A1F2C] overflow-hidden">
+    <section className="relative py-24 bg-[#FCEB60] overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 right-10 w-40 h-40 bg-primary rounded-full opacity-10 blur-xl" />
@@ -22,14 +22,14 @@ const PrizeSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-white rounded-md bg-secondary-dark/80">
+          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-secondary-dark rounded-md bg-secondary-dark/20">
             참가자 혜택
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-secondary-dark mb-6 leading-tight">
             입코딩 챔피언을 위한 <br />
             <span className="text-primary">특별한 보상</span>
           </h2>
-          <p className="text-lg text-white/80">
+          <p className="text-lg text-secondary-dark/90">
             GitHub Copilot의 음성 기능으로 코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요
           </p>
         </motion.div>
