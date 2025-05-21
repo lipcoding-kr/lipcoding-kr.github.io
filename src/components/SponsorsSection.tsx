@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
 import { HandshakeIcon } from "lucide-react";
@@ -47,7 +48,7 @@ const SponsorsSection = () => {
           BENEFIT 03
         </div>
         <h2 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-none tracking-tight">
-          <span className="text-green-500">함께하는</span> <span className="text-white/80 text-5xl">파트너사</span>
+          <span className="text-green-500">함께하는</span> <span className="text-white/80 text-7xl" style={{ fontSize: '72px' }}>파트너사</span>
         </h2>
         <p className="text-white/70 text-lg mb-8">
           입코딩 챔피언십을 후원하고 지원하는 기업과 단체를 소개합니다
