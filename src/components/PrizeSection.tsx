@@ -24,10 +24,10 @@ const PrizeSection = () => {
       <div className="container px-4 mx-auto relative z-10">
         <div className="mb-16 text-center">
           <div className="mb-4 inline-block px-2 py-1 border border-white/20 rounded text-sm text-white/80">
-            BENEFIT 02
+            참가자 혜택
           </div>
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-none tracking-tight">
-            최대 <span className="text-red-500">50%</span> <span className="text-white/80 text-5xl">DISCOUNT</span>
+            입코딩 챔피언을 위한 특별한 보상
           </h2>
           <p className="text-white/70 text-lg">
             조건 없는 50% 할인과 함께 포인트까지 쌓은 브랜드를 경험해 보세요!
