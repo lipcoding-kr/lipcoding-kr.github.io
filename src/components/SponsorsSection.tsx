@@ -48,7 +48,7 @@ const SponsorsSection = () => {
           BENEFIT 03
         </div>
         <h2 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-none tracking-tight">
-          최대 <span className="text-green-500">3,000P</span> <span className="text-white/80 text-5xl">추가 적립</span>
+          <span className="text-green-500">함께하는</span> <span className="text-white/80 text-5xl">파트너사</span>
         </h2>
         <p className="text-white/70 text-lg mb-8">
           리뷰 더블 위크
@@ -128,3 +128,4 @@ const SponsorsSection = () => {
 };
 
 export default SponsorsSection;
+
