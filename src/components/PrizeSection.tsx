@@ -57,10 +57,6 @@ const PrizeSection = () => {
                     <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 최신형 개발자 워크스테이션</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <GamepadIcon className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>닌텐도 스위치</span>
-                  </li>
                   <li className="flex items-start gap-2">
                     <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>GitHub Copilot 1년 무료 라이센스</span>
@@ -84,10 +80,6 @@ const PrizeSection = () => {
               </CardHeader>
               <CardContent className="text-black">
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Headphones className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>에어팟 프로</span>
-                  </li>
                   <li className="flex items-start gap-2">
                     <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 고급 노이즈 캔슬링 헤드셋</span>
@@ -115,10 +107,6 @@ const PrizeSection = () => {
               </CardHeader>
               <CardContent className="text-black">
                 <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Keyboard className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>키보드/마우스 세트</span>
-                  </li>
                   <li className="flex items-start gap-2">
                     <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>개발자 굿즈 패키지</span>
