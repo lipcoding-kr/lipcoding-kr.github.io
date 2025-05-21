@@ -7,157 +7,137 @@ import { AspectRatio } from "./ui/aspect-ratio";
 
 const PrizeSection = () => {
   return (
-    <section className="relative py-24 bg-[#FCEB60] overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-10 right-10 w-40 h-40 bg-primary rounded-full opacity-10 blur-xl" />
-        <div className="absolute bottom-10 left-10 w-60 h-60 bg-secondary opacity-10 blur-xl" />
+    <section className="relative py-24 bg-black overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[10%] right-[10%] w-20 h-20 bg-blue-500 rounded-full opacity-20 blur-xl" />
+        <div className="absolute bottom-[10%] left-[10%] w-32 h-32 bg-green-500 rounded-full opacity-20 blur-xl" />
         
-        {/* Grid pattern overlay */}
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGZpbGw9IiMyMTIxMjEiIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNNjAgMEgwdjYwaDYwVjB6TTAgMGg2MHY2MEgwVjB6IiBzdHJva2U9IiMzMzMiIHN0cm9rZS1vcGFjaXR5PSIuMSIvPjwvZz48L3N2Zz4=')] opacity-10" />
+        {/* Decorative circles like in the reference */}
+        <div className="absolute bottom-[30%] right-[15%]">
+          <div className="w-8 h-8 bg-red-500 rounded-full opacity-80"></div>
+          <div className="w-8 h-8 bg-red-400 rounded-full opacity-80 ml-4"></div>
+          <div className="w-8 h-8 bg-red-300 rounded-full opacity-80 ml-8"></div>
+        </div>
       </div>
       
       <div className="container px-4 mx-auto relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-3xl mx-auto text-center mb-16"
-        >
-          <Badge 
-            className="mb-6 bg-black text-white px-4 py-1.5 text-sm font-medium tracking-wider rounded-md border-0"
-            variant="outline"
-          >
-            참가자 혜택
-          </Badge>
-          <h2 className="text-3xl md:text-5xl font-bold text-secondary-dark mb-6 leading-tight">
-            입코딩 챔피언을 위한 <br />
-            <span className="text-primary">특별한 보상</span>
+        <div className="mb-16 text-center">
+          <div className="mb-4 inline-block px-2 py-1 border border-white/20 rounded text-sm text-white/80">
+            BENEFIT 02
+          </div>
+          <h2 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-none tracking-tight">
+            최대 <span className="text-red-500">50%</span> <span className="text-white/80 text-5xl">DISCOUNT</span>
           </h2>
-          <p className="text-lg text-secondary-dark/90">
-            코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요
+          <p className="text-white/70 text-lg">
+            조건 없는 50% 할인과 함께 포인트까지 쌓은 브랜드를 경험해 보세요!
           </p>
-        </motion.div>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {/* First Prize Card */}
+        {/* Prize cards in modern style */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
+          >
+            <div className="mb-6">
+              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
+                <Trophy className="h-6 w-6 text-yellow-500" /> 대상 (1명)
+              </h3>
+            </div>
+            <div className="bg-white/5 rounded-lg p-4 mb-4">
+              <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
+                <img 
+                  src="/lovable-uploads/5af7d938-ff77-43b9-8506-7ce8d775b402.png" 
+                  alt="Xbox Series S console with controller" 
+                  className="object-contain w-full h-full"
+                />
+              </AspectRatio>
+              <div className="text-xl font-bold text-white">
+                <Gamepad2 className="h-5 w-5 text-blue-400 inline-block mr-2" />
+                상품: 엑스박스
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
+          >
+            <div className="mb-6">
+              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
+                <Award className="h-6 w-6 text-blue-400" /> 최우수상 (1명)
+              </h3>
+            </div>
+            <div className="bg-white/5 rounded-lg p-4 mb-4">
+              <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
+                <img 
+                  src="/lovable-uploads/ceebd8b0-0a6a-4fe6-a84b-130633dd2bc2.png" 
+                  alt="Nintendo Switch console" 
+                  className="object-contain w-full h-full"
+                />
+              </AspectRatio>
+              <div className="text-xl font-bold text-white">
+                <Gamepad2 className="h-5 w-5 text-blue-400 inline-block mr-2" />
+                상품: 닌텐도스위치
+              </div>
+            </div>
+          </motion.div>
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
           >
-            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
-              <CardHeader className="pb-2">
-                <CardTitle className="flex items-center gap-2 text-primary">
-                  <Trophy className="h-5 w-5" /> 대상 (1명)
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-black space-y-4">
-                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/5af7d938-ff77-43b9-8506-7ce8d775b402.png" 
-                    alt="Xbox Series S console with controller" 
-                    className="object-contain w-full h-full"
-                  />
-                </AspectRatio>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>상품: 엑스박스</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="mb-6">
+              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
+                <Medal className="h-6 w-6 text-green-400" /> 우수상 (1명)
+              </h3>
+            </div>
+            <div className="bg-white/5 rounded-lg p-4 mb-4">
+              <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
+                <img 
+                  src="/lovable-uploads/45c20fd6-c525-4a3f-ac25-30edbcbfb37c.png" 
+                  alt="AirPods Pro earbuds" 
+                  className="object-contain w-full h-full"
+                />
+              </AspectRatio>
+              <div className="text-xl font-bold text-white">
+                <Headphones className="h-5 w-5 text-blue-400 inline-block mr-2" />
+                상품: 에어팟 프로
+              </div>
+            </div>
           </motion.div>
-
-          {/* Second Prize Card */}
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
           >
-            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
-              <CardHeader className="pb-2">
-                <CardTitle className="flex items-center gap-2 text-primary">
-                  <Award className="h-5 w-5" /> 최우수상 (1명)
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-black space-y-4">
-                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/ceebd8b0-0a6a-4fe6-a84b-130633dd2bc2.png" 
-                    alt="Nintendo Switch console" 
-                    className="object-contain w-full h-full"
-                  />
-                </AspectRatio>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>상품: 닌텐도스위치</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </motion.div>
-
-          {/* Third Prize Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
-              <CardHeader className="pb-2">
-                <CardTitle className="flex items-center gap-2 text-primary">
-                  <Medal className="h-5 w-5" /> 우수상 (1명)
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-black space-y-4">
-                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/45c20fd6-c525-4a3f-ac25-30edbcbfb37c.png" 
-                    alt="AirPods Pro earbuds" 
-                    className="object-contain w-full h-full"
-                  />
-                </AspectRatio>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Headphones className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>상품: 에어팟 프로</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </motion.div>
-          
-          {/* Fourth Prize Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
-              <CardHeader className="pb-2">
-                <CardTitle className="flex items-center gap-2 text-primary">
-                  <Medal className="h-5 w-5" /> 장려상 (1명)
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-black space-y-4">
-                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/f4123bcd-57ba-4738-a70a-a9c4113b0778.png" 
-                    alt="Microsoft keyboard and mouse" 
-                    className="object-contain w-full h-full"
-                  />
-                </AspectRatio>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <Keyboard className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>상품: 키보드/마우스</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <div className="mb-6">
+              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
+                <Medal className="h-6 w-6 text-purple-400" /> 장려상 (1명)
+              </h3>
+            </div>
+            <div className="bg-white/5 rounded-lg p-4 mb-4">
+              <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
+                <img 
+                  src="/lovable-uploads/f4123bcd-57ba-4738-a70a-a9c4113b0778.png" 
+                  alt="Microsoft keyboard and mouse" 
+                  className="object-contain w-full h-full"
+                />
+              </AspectRatio>
+              <div className="text-xl font-bold text-white">
+                <Keyboard className="h-5 w-5 text-blue-400 inline-block mr-2" />
+                상품: 키보드/마우스
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>
