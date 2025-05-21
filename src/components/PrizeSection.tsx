@@ -35,7 +35,7 @@ const PrizeSection = () => {
           </p>
         </div>
 
-        {/* Prize cards in modern style */}
+        {/* Prize cards in modern style - centered with mx-auto */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
