@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
@@ -36,31 +35,16 @@ const HeroSection = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <div className="flex flex-col space-y-2 mb-12">
-            {/* Styled like the reference image with outlined text */}
+            {/* Updated text as requested */}
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight">
-              6월은
+              천하제일
             </h1>
-            <h1 className="text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight relative">
-              <span className="relative">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">헤택</span>
-                <span className="absolute -right-4 -top-6">
-                  <div className="bg-red-500 text-white text-xs px-3 py-1 rounded-full transform rotate-12 whitespace-nowrap">
-                    GitHub Copilot
-                  </div>
-                </span>
-              </span>
-              으로
+            <h1 className="text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight">
+              입코딩 대회
             </h1>
-            <h1 className="text-6xl md:text-8xl font-bold text-white leading-none tracking-tight">
-              <span className="relative">
-                배부른 날
-                <span className="absolute -left-10 top-1/2">
-                  <div className="w-14 h-14 bg-green-400 rounded-full flex items-center justify-center text-black font-bold">
-                    🎙️
-                  </div>
-                </span>
-              </span>
-            </h1>
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-300 leading-none tracking-tight mt-2">
+              with GitHub Copilot
+            </h2>
           </div>
           
           <motion.div
