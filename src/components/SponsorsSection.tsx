@@ -39,10 +39,10 @@ const SponsorsSection = () => {
         <div className="mb-4 inline-block px-2 py-1 border border-white/20 rounded text-sm text-white/80">
           BENEFIT 03
         </div>
-        <h2 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-none tracking-tight">
+        <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-none tracking-tight">
           <span className="text-green-500">함께하는</span> <span className="text-white/80 text-7xl" style={{ fontSize: '72px' }}>파트너사</span>
         </h2>
-        <p className="text-white/70 text-xl md:text-2xl mb-8">
+        <p className="text-white/70 text-xl md:text-2xl mb-12">
           입코딩 챔피언십을 후원하고 지원하는 기업과 단체를 소개합니다
         </p>
       </div>
