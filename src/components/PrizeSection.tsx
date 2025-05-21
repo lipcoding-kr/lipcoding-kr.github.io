@@ -115,7 +115,7 @@ const PrizeSection = () => {
               <CardContent className="text-black space-y-4">
                 <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1610438235354-a6ae5528385c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    src="/lovable-uploads/45c20fd6-c525-4a3f-ac25-30edbcbfb37c.png" 
                     alt="AirPods Pro earbuds" 
                     className="object-contain w-full h-full"
                   />
