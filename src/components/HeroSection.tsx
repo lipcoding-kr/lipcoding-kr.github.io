@@ -1,7 +1,9 @@
+
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { Badge } from "./ui/badge";
 
 const HeroSection = () => {
   return (
@@ -42,9 +44,14 @@ const HeroSection = () => {
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight">
               입코딩 대회
             </h1>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-300 leading-none tracking-tight mt-2">
-              with GitHub Copilot
-            </h2>
+            <div className="flex items-center justify-center gap-3">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-300 leading-none tracking-tight mt-2">
+                with GitHub Copilot
+              </h2>
+              <Badge className="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-1 text-sm font-semibold mt-2 transform -rotate-3">
+                LipCoding
+              </Badge>
+            </div>
           </div>
           
           <motion.div
