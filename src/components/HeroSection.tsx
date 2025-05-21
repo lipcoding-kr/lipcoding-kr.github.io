@@ -28,7 +28,8 @@ const HeroSection = () => {
             LipCoding
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight uppercase">
-            천하제일 입코딩 대회 (with GitHub Copilot)
+            천하제일 입코딩 대회 <br />
+            <span className="text-white/60 font-light">with GitHub Copilot</span>
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-6">
             🎙️ GitHub Copilot을 활용한 음성 기반 코딩 대회, 지금 바로 바이브 코딩에 도전하세요!
