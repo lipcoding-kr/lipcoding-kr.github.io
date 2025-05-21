@@ -29,18 +29,6 @@ const sponsors = [
 const SponsorsSection = () => {
   return (
     <section className="relative py-24 bg-black overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[20%] right-[20%] w-16 h-16 bg-green-500 rounded-full opacity-60 blur-sm" />
-        <div className="absolute bottom-[30%] left-[20%] w-24 h-24 bg-blue-600 rounded-full opacity-50 blur-sm" />
-        
-        {/* Circle pattern like in the reference */}
-        <div className="absolute top-[40%] left-[10%]">
-          <div className="w-6 h-6 bg-blue-500 rounded-full opacity-80"></div>
-          <div className="w-6 h-6 bg-blue-400 rounded-full opacity-80 ml-3"></div>
-          <div className="w-6 h-6 bg-blue-300 rounded-full opacity-80 ml-6"></div>
-        </div>
-      </div>
       
     <div className="container px-4 mx-auto relative z-10">
       <div className="mb-16 text-center">
