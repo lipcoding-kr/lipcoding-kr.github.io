@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Trophy, Gift, Award, Medal, Gamepad2 } from "lucide-react";
+import { Trophy, Gift, Award, Medal, Gamepad2, Headphones, Keyboard } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { AspectRatio } from "./ui/aspect-ratio";
 
@@ -35,11 +35,11 @@ const PrizeSection = () => {
             <span className="text-primary">특별한 보상</span>
           </h2>
           <p className="text-lg text-secondary-dark/90">
-            GitHub Copilot의 음성 기능으로 코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요
+            코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {/* First Prize Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ const PrizeSection = () => {
               <CardContent className="text-black space-y-4">
                 <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
                   <img 
-                    src="/lovable-uploads/4c29fdf6-9e4e-4714-a967-8f9d2db0e8cf.png" 
+                    src="/lovable-uploads/5af7d938-ff77-43b9-8506-7ce8d775b402.png" 
                     alt="Xbox Series S console with controller" 
                     className="object-contain w-full h-full"
                   />
@@ -82,7 +82,14 @@ const PrizeSection = () => {
                   <Award className="h-5 w-5" /> 최우수상 (1명)
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-black">
+              <CardContent className="text-black space-y-4">
+                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1662997291246-31c7c8133cdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Nintendo Switch console" 
+                    className="object-contain w-full h-full"
+                  />
+                </AspectRatio>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
@@ -105,10 +112,17 @@ const PrizeSection = () => {
                   <Medal className="h-5 w-5" /> 우수상 (1명)
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-black">
+              <CardContent className="text-black space-y-4">
+                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1610438235354-a6ae5528385c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="AirPods Pro earbuds" 
+                    className="object-contain w-full h-full"
+                  />
+                </AspectRatio>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
+                    <Headphones className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 에어팟 프로</span>
                   </li>
                 </ul>
@@ -128,10 +142,17 @@ const PrizeSection = () => {
                   <Medal className="h-5 w-5" /> 장려상 (1명)
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-black">
+              <CardContent className="text-black space-y-4">
+                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    alt="Keyboard and mouse" 
+                    className="object-contain w-full h-full"
+                  />
+                </AspectRatio>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
+                    <Keyboard className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 키보드/마우스</span>
                   </li>
                 </ul>
