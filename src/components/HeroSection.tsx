@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, Users } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -43,7 +43,7 @@ const HeroSection = () => {
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-white text-xl px-12 py-7 h-auto font-semibold transition-all duration-300 hover:translate-y-[-5px] shadow-lg hover:shadow-primary/30"
             >
-              Apply <ArrowRight className="ml-2" />
+              Apply Now <ArrowRight className="ml-2" />
             </Button>
           </motion.div>
           
@@ -53,8 +53,11 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
-              className="p-6 rounded-lg bg-white/5 backdrop-blur-sm"
+              className="p-6 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10"
             >
+              <div className="flex items-center justify-center mb-3">
+                <Calendar className="text-secondary w-6 h-6" />
+              </div>
               <h3 className="font-bold text-secondary mb-1">Event Date</h3>
               <p className="text-white text-xl">Coming Soon</p>
             </motion.div>
@@ -63,8 +66,11 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.7 }}
-              className="p-6 rounded-lg bg-white/5 backdrop-blur-sm"
+              className="p-6 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10"
             >
+              <div className="flex items-center justify-center mb-3">
+                <MapPin className="text-secondary w-6 h-6" />
+              </div>
               <h3 className="font-bold text-secondary mb-1">Location</h3>
               <p className="text-white text-xl">Virtual Event</p>
             </motion.div>
@@ -73,8 +79,11 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="p-6 rounded-lg bg-white/5 backdrop-blur-sm"
+              className="p-6 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10"
             >
+              <div className="flex items-center justify-center mb-3">
+                <Users className="text-secondary w-6 h-6" />
+              </div>
               <h3 className="font-bold text-secondary mb-1">Registration</h3>
               <p className="text-white text-xl">Open Now</p>
             </motion.div>
