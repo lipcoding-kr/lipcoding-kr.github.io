@@ -1,7 +1,8 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Trophy, Gift, Star, Award, Medal, Gamepad2, GamepadIcon, NintendoSwitch, Keyboard, Mouse, Headphones } from "lucide-react";
+import { Trophy, Gift, Star, Award, Medal, Gamepad2, GamepadIcon, Keyboard, Mouse, Headphones } from "lucide-react";
+import { Badge } from "./ui/badge";
 
 const PrizeSection = () => {
   return (
@@ -22,9 +23,12 @@ const PrizeSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-secondary-dark rounded-md bg-secondary-dark/20">
+          <Badge 
+            className="mb-6 bg-black text-white px-4 py-1.5 text-sm font-medium tracking-wider rounded-md"
+            variant="outline"
+          >
             참가자 혜택
-          </span>
+          </Badge>
           <h2 className="text-3xl md:text-5xl font-bold text-secondary-dark mb-6 leading-tight">
             입코딩 챔피언을 위한 <br />
             <span className="text-primary">특별한 보상</span>
@@ -54,7 +58,7 @@ const PrizeSection = () => {
                     <span>상품: 최신형 개발자 워크스테이션</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <NintendoSwitch className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
+                    <GamepadIcon className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>닌텐도 스위치</span>
                   </li>
                   <li className="flex items-start gap-2">
