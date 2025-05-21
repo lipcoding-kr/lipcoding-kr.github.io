@@ -5,7 +5,7 @@ import { Trophy, Gift, Star, Award, Medal } from "lucide-react";
 
 const PrizeSection = () => {
   return (
-    <section className="relative py-24 bg-gradient-to-tr from-black via-secondary-dark to-primary/20 overflow-hidden">
+    <section className="relative py-24 bg-yellow-400 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 right-10 w-40 h-40 bg-primary rounded-full opacity-10 blur-xl" />
@@ -25,11 +25,11 @@ const PrizeSection = () => {
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-secondary-dark rounded-md bg-secondary">
             참가자 혜택
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-black mb-6 leading-tight">
             입코딩 챔피언을 위한 <br />
             <span className="text-primary">특별한 보상</span>
           </h2>
-          <p className="text-lg text-white/80">
+          <p className="text-lg text-black/80">
             GitHub Copilot의 음성 기능으로 코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요
           </p>
         </motion.div>
@@ -41,20 +41,20 @@ const PrizeSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Card className="bg-white/10 backdrop-blur-sm border-white/10 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
+            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
               <CardHeader className="pb-2">
                 <CardTitle className="flex items-center gap-2 text-primary">
                   <Trophy className="h-5 w-5" /> 대상 (1명)
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-white">
+              <CardContent className="text-black">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <Gift className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 최신형 개발자 워크스테이션</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>GitHub Copilot 1년 무료 라이센스</span>
                   </li>
                 </ul>
@@ -68,20 +68,20 @@ const PrizeSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            <Card className="bg-white/10 backdrop-blur-sm border-white/10 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
+            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
               <CardHeader className="pb-2">
                 <CardTitle className="flex items-center gap-2 text-primary">
                   <Award className="h-5 w-5" /> 최우수상 (2명)
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-white">
+              <CardContent className="text-black">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <Gift className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 고급 노이즈 캔슬링 헤드셋</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>GitHub Copilot 6개월 무료 라이센스</span>
                   </li>
                 </ul>
@@ -95,20 +95,20 @@ const PrizeSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Card className="bg-white/10 backdrop-blur-sm border-white/10 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
+            <Card className="bg-white/80 backdrop-blur-sm border-white/20 h-full transform hover:translate-y-[-5px] transition-transform duration-300">
               <CardHeader className="pb-2">
                 <CardTitle className="flex items-center gap-2 text-primary">
                   <Medal className="h-5 w-5" /> 우수상 (5명)
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-white">
+              <CardContent className="text-black">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <Gift className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                    <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 개발자 굿즈 패키지</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-secondary mt-0.5 shrink-0" />
+                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>GitHub Copilot 3개월 무료 라이센스</span>
                   </li>
                 </ul>
