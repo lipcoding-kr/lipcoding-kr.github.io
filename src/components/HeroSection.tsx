@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ArrowRight, Calendar, MapPin, Users } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, Users, ExternalLink } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -39,12 +39,19 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-white text-xl px-12 py-7 h-auto font-semibold transition-all duration-300 hover:translate-y-[-5px] shadow-lg hover:shadow-primary/30"
+            <a 
+              href="https://event-us.kr/msftkrdevrel/event/104124" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block"
             >
-              Apply Now <ArrowRight className="ml-2" />
-            </Button>
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-white text-xl px-12 py-7 h-auto font-semibold transition-all duration-300 hover:translate-y-[-5px] shadow-lg hover:shadow-primary/30 flex items-center"
+              >
+                Apply Now <ExternalLink className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
           </motion.div>
           
           {/* Event stats */}
