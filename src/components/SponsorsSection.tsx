@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
 import { HandshakeIcon } from "lucide-react";
@@ -51,7 +50,7 @@ const SponsorsSection = () => {
           <span className="text-green-500">함께하는</span> <span className="text-white/80 text-5xl">파트너사</span>
         </h2>
         <p className="text-white/70 text-lg mb-8">
-          리뷰 더블 위크
+          입코딩 챔피언십을 후원하고 지원하는 기업과 단체를 소개합니다
         </p>
       </div>
 
@@ -128,4 +127,3 @@ const SponsorsSection = () => {
 };
 
 export default SponsorsSection;
-
