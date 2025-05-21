@@ -27,7 +27,8 @@ const PrizeSection = () => {
             참가자 혜택
           </div>
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-2 leading-none tracking-tight">
-            입코딩 챔피언을 위한<br />특별한 보상
+            입코딩 챔피언을 위한<br />
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-transparent bg-clip-text">특별한 보상</span>
           </h2>
           <p className="text-white/70 text-lg">
             코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요!
