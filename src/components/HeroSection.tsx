@@ -61,7 +61,8 @@ const HeroSection = () => {
             className="mb-16"
           >
             <p className="text-xl text-white/70 mb-8">
-              GitHub Copilot을 활용한 음성 기반 코딩 대회, 지금 바로 바이브 코딩에 도전하세요!
+              GitHub Copilot을 활용한 음성 기반 코딩 대회,<br />
+              지금 바로 바이브 코딩에 도전하세요!
             </p>
             <a 
               href="https://event-us.kr/msftkrdevrel/event/104124" 
