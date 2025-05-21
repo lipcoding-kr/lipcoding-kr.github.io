@@ -30,7 +30,7 @@ const PrizeSection = () => {
             입코딩 챔피언을 위한<br />
             <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-transparent bg-clip-text">특별한 보상</span>
           </h2>
-          <p className="text-white/70 text-lg">
+          <p className="text-white/70 text-xl md:text-2xl">
             코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요!
           </p>
         </div>
