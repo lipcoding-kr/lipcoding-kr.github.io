@@ -49,12 +49,12 @@ const SponsorsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-16"
         >
-          <h3 className="text-xl font-semibold text-blue-400 mb-6 text-center">
-            <HandshakeIcon className="h-5 w-5 inline-block mr-2" /> Platinum 스폰서
+          <h3 className="text-xl font-semibold text-blue-400 mb-8 text-center flex justify-center items-center">
+            <HandshakeIcon className="h-5 w-5 mr-2" /> Platinum 스폰서
           </h3>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {sponsors
               .filter((sponsor) => sponsor.level === "Platinum")
               .map((sponsor, index) => (
@@ -63,10 +63,10 @@ const SponsorsSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="w-full md:w-1/2 max-w-md"
+                  className="w-full"
                 >
-                  <div className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:-translate-y-1">
-                    <div className="bg-white/90 p-4 rounded-lg mb-4 w-48 h-24 mx-auto flex items-center justify-center">
+                  <div className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-blue-500/50 transition-all hover:-translate-y-1 h-full">
+                    <div className="bg-white/90 p-4 rounded-lg mb-4 h-28 flex items-center justify-center">
                       <img 
                         src={sponsor.logo} 
                         alt={`${sponsor.name} 로고`} 
@@ -80,35 +80,43 @@ const SponsorsSection = () => {
           </div>
         </motion.div>
 
-        {/* Gold & Silver Sponsors */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {sponsors
-            .filter((sponsor) => sponsor.level === "Gold" || sponsor.level === "Silver")
-            .map((sponsor, index) => (
-              <motion.div
-                key={sponsor.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-              >
-                <div className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-green-500/50 transition-all hover:-translate-y-1">
-                  <div className="bg-white/90 p-3 rounded-lg mb-3 w-36 h-20 mx-auto flex items-center justify-center">
-                    <img 
-                      src={sponsor.logo} 
-                      alt={`${sponsor.name} 로고`}  
-                      className="max-w-full max-h-full object-contain" 
-                    />
+        {/* Gold Sponsors */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mb-8"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {sponsors
+              .filter((sponsor) => sponsor.level === "Gold" || sponsor.level === "Silver")
+              .map((sponsor, index) => (
+                <motion.div
+                  key={sponsor.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                  className="w-full"
+                >
+                  <div className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-green-500/50 transition-all hover:-translate-y-1 h-full">
+                    <div className="bg-white/90 p-4 rounded-lg mb-4 h-28 flex items-center justify-center">
+                      <img 
+                        src={sponsor.logo} 
+                        alt={`${sponsor.name} 로고`}  
+                        className="max-w-full max-h-full object-contain" 
+                      />
+                    </div>
+                    <div className="text-center">
+                      <span className={`inline-block px-3 py-1 text-xs rounded ${sponsor.level === "Gold" ? "bg-yellow-500/20 text-yellow-300" : "bg-gray-400/20 text-gray-300"} mb-2`}>
+                        {sponsor.level}
+                      </span>
+                      <h4 className="text-xl font-semibold text-white">{sponsor.name}</h4>
+                    </div>
                   </div>
-                  <div className="text-center">
-                    <span className={`inline-block px-2 py-1 text-xs rounded ${sponsor.level === "Gold" ? "bg-yellow-500/20 text-yellow-300" : "bg-gray-400/20 text-gray-300"} mb-2`}>
-                      {sponsor.level}
-                    </span>
-                    <h4 className="text-lg font-semibold text-white">{sponsor.name}</h4>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-        </div>
+                </motion.div>
+              ))}
+          </div>
+        </motion.div>
       </div>
     </div>
     </section>
