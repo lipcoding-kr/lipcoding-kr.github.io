@@ -85,7 +85,7 @@ const PrizeSection = () => {
               <CardContent className="text-black space-y-4">
                 <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1662997291246-31c7c8133cdf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                    src="/lovable-uploads/ceebd8b0-0a6a-4fe6-a84b-130633dd2bc2.png" 
                     alt="Nintendo Switch console" 
                     className="object-contain w-full h-full"
                   />
