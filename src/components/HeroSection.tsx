@@ -141,49 +141,6 @@ const HeroSection = () => {
             </Card>
           </motion.div>
         </div>
-
-        {/* Timeline Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
-          className="max-w-3xl mx-auto mb-16"
-        >
-          <Card className="bg-white/10 backdrop-blur-sm border-white/10">
-            <CardHeader>
-              <CardTitle className="text-center text-xl text-secondary">행사 시간표</CardTitle>
-              <CardDescription className="text-center text-white/70">※시간대별 상세 정보는 추후 업데이트 예정</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white">
-                <div className="flex items-start gap-3">
-                  <Clock className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                  <div>
-                    <p className="font-medium">오프닝 및 행사 안내</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Clock className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                  <div>
-                    <p className="font-medium">실전 입코딩</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Clock className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                  <div>
-                    <p className="font-medium">발표 및 시상</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Clock className="text-primary h-5 w-5 mt-0.5 shrink-0" />
-                  <div>
-                    <p className="font-medium">클로징</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.div>
       </div>
     </section>
   );
