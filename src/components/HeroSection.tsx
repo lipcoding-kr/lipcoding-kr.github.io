@@ -41,8 +41,8 @@ const HeroSection = () => {
             <h1 className="text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight">
               천하제일
             </h1>
-            <h1 className="text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight">
-              입코딩 대회
+            <h1 className="text-6xl md:text-8xl font-bold leading-none tracking-tight">
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-transparent bg-clip-text">입코딩</span> 대회
             </h1>
             <div className="flex items-center justify-center gap-3">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-300 leading-none tracking-tight mt-2">
