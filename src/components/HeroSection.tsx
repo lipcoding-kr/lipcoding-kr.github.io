@@ -71,7 +71,7 @@ const HeroSection = () => {
             >
               <Button 
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white text-xl px-12 py-7 h-auto font-bold transition-all duration-300 hover:-translate-y-1"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-xl px-12 py-4 h-auto font-bold transition-all duration-300 hover:-translate-y-1"
               >
                 지금 지원하기 <ExternalLink className="ml-2 w-5 h-5" />
               </Button>
