@@ -25,7 +25,7 @@ const HeroSection = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-secondary-dark rounded-md bg-secondary">
-            Limited Spots Available
+            LipCoding
           </span>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight uppercase">
             천하제일 입코딩 대회 (with GitHub Copilot)
