@@ -1,8 +1,9 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Trophy, Gift, Star, Award, Medal, Gamepad2 } from "lucide-react";
+import { Trophy, Gift, Award, Medal, Gamepad2 } from "lucide-react";
 import { Badge } from "./ui/badge";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 const PrizeSection = () => {
   return (
@@ -51,7 +52,14 @@ const PrizeSection = () => {
                   <Trophy className="h-5 w-5" /> 대상 (1명)
                 </CardTitle>
               </CardHeader>
-              <CardContent className="text-black">
+              <CardContent className="text-black space-y-4">
+                <AspectRatio ratio={4/3} className="bg-gray-100 rounded-md overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/4c29fdf6-9e4e-4714-a967-8f9d2db0e8cf.png" 
+                    alt="Xbox Series S console with controller" 
+                    className="object-contain w-full h-full"
+                  />
+                </AspectRatio>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
