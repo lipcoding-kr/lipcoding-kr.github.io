@@ -38,7 +38,7 @@ const PrizeSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {/* First Prize Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -56,10 +56,6 @@ const PrizeSection = () => {
                   <li className="flex items-start gap-2">
                     <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 엑스박스</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>GitHub Copilot 1년 무료 라이센스</span>
                   </li>
                 </ul>
               </CardContent>
@@ -84,10 +80,6 @@ const PrizeSection = () => {
                     <Gamepad2 className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 닌텐도스위치</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>GitHub Copilot 6개월 무료 라이센스</span>
-                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -111,10 +103,6 @@ const PrizeSection = () => {
                     <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 에어팟 프로</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>GitHub Copilot 3개월 무료 라이센스</span>
-                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -137,10 +125,6 @@ const PrizeSection = () => {
                   <li className="flex items-start gap-2">
                     <Gift className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
                     <span>상품: 키보드/마우스</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Star className="h-5 w-5 text-secondary-dark mt-0.5 shrink-0" />
-                    <span>GitHub Copilot 1개월 무료 라이센스</span>
                   </li>
                 </ul>
               </CardContent>
