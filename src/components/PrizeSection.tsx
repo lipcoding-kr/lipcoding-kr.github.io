@@ -5,7 +5,7 @@ import { Trophy, Gift, Star, Award, Medal } from "lucide-react";
 
 const PrizeSection = () => {
   return (
-    <section className="relative py-24 bg-gradient-to-tr from-black to-secondary-dark overflow-hidden">
+    <section className="relative py-24 bg-gradient-to-tr from-black via-secondary-dark to-primary/20 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 right-10 w-40 h-40 bg-primary rounded-full opacity-10 blur-xl" />
