@@ -22,12 +22,7 @@ const sponsors = [
     name: "Women Who Code Korea",
     logo: "/lovable-uploads/c553b11a-90e5-4f2e-aed2-777aa45a18a7.png",
     level: "Gold",
-  },
-  {
-    name: "VS Code",
-    logo: "/placeholder.svg",
-    level: "Silver",
-  },
+  }
 ];
 
 const SponsorsSection = () => {
