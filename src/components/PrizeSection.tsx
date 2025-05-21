@@ -25,7 +25,7 @@ const PrizeSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <Badge 
-            className="mb-6 bg-black text-white px-4 py-1.5 text-sm font-medium tracking-wider rounded-md"
+            className="mb-6 bg-black text-white px-4 py-1.5 text-sm font-medium tracking-wider rounded-md border-0"
             variant="outline"
           >
             참가자 혜택
