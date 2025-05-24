@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
 import { ListPlus } from "lucide-react";
@@ -37,7 +36,7 @@ const SponsorsSection = () => {
     <div className="container px-4 mx-auto relative z-10">
       <div className="mb-16 text-center">
         <div className="mb-4 inline-block px-2 py-1 border border-white/20 rounded text-sm text-white/80">
-          BENEFIT 03
+          행사후원
         </div>
         <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-none tracking-tight">
           <span className="text-green-500">함께하는</span> <span className="text-white/80 text-7xl" style={{ fontSize: '72px' }}>파트너사</span>
