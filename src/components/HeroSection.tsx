@@ -82,7 +82,7 @@ const HeroSection = () => {
               지금 바로 바이브 코딩에 도전하세요!
             </p>
             <a 
-              href="https://event-us.kr/msftkrdevrel/event/104124" 
+              href="https://aka.ms/lipcoding/register" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block"
