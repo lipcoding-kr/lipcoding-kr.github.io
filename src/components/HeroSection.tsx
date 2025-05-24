@@ -4,10 +4,11 @@ import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headpho
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./ui/tooltip";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const HeroSection = () => {
   const [isMuted, setIsMuted] = useState(true);
+  const [showSoundTooltip, setShowSoundTooltip] = useState(true);
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   const toggleMute = () => {
@@ -19,6 +20,7 @@ const HeroSection = () => {
         // Unmute by changing mute=1 to mute=0
         iframe.src = currentSrc.replace('mute=1', 'mute=0');
         setIsMuted(false);
+        setShowSoundTooltip(false);
       } else {
         // Mute by changing mute=0 to mute=1
         iframe.src = currentSrc.replace('mute=0', 'mute=1');
@@ -26,6 +28,15 @@ const HeroSection = () => {
       }
     }
   };
+
+  // Auto hide tooltip after 5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSoundTooltip(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section className="relative min-h-[110vh] md:min-h-[100vh] flex items-center justify-center overflow-hidden">
@@ -69,6 +80,46 @@ const HeroSection = () => {
         </Tooltip>
       </TooltipProvider>
 
+      {/* Custom Sound Tooltip */}
+      {showSoundTooltip && isMuted && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, y: -10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.8, y: -10 }}
+          transition={{ duration: 0.3 }}
+          className="absolute top-20 right-6 z-40 bg-white rounded-2xl shadow-2xl p-4 max-w-xs"
+          style={{
+            background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
+            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
+          }}
+        >
+          {/* Tooltip Arrow */}
+          <div className="absolute -top-2 right-8 w-4 h-4 bg-white transform rotate-45 shadow-lg"></div>
+          
+          <div className="flex items-center gap-3">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center">
+                <Volume2 className="w-6 h-6 text-white" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-gray-900 font-semibold text-sm mb-1">소리를 켜주세요!</h3>
+              <p className="text-gray-600 text-xs leading-relaxed">
+                더 생생한 경험을 위해 사운드를 활성화해보세요
+              </p>
+            </div>
+            <button
+              onClick={() => setShowSoundTooltip(false)}
+              className="flex-shrink-0 text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </motion.div>
+      )}
+
       {/* Colorful Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
         <div className="absolute top-[20%] left-[15%] w-16 h-16 bg-blue-500 rounded-full opacity-80 blur-sm" />
@@ -91,6 +142,7 @@ const HeroSection = () => {
       </div>
       
       <div className="container px-4 mx-auto relative z-20 pt-16 sm:pt-8 md:pt-0">
+        {/* Main content */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
