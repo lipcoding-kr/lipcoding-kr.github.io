@@ -6,9 +6,26 @@ import { Badge } from "./ui/badge";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[110vh] md:min-h-[100vh] flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative min-h-[110vh] md:min-h-[100vh] flex items-center justify-center overflow-hidden">
+      {/* YouTube Video Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <iframe
+          src="https://www.youtube.com/embed/IUY0TJEwnGA?si=SRK--23DlHJVvUe4&controls=0&autoplay=1&mute=1&loop=1&playlist=IUY0TJEwnGA&showinfo=0&rel=0&modestbranding=1"
+          className="w-full h-full object-cover scale-150"
+          style={{
+            minWidth: '100vw',
+            minHeight: '100vh',
+            pointerEvents: 'none'
+          }}
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
+
       {/* Colorful Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
         <div className="absolute top-[20%] left-[15%] w-16 h-16 bg-blue-500 rounded-full opacity-80 blur-sm" />
         <div className="absolute top-[30%] right-[10%] w-12 h-12 bg-green-500 rounded-full opacity-80 blur-sm" />
         <div className="absolute bottom-[20%] left-[20%] w-20 h-20 bg-indigo-600 rounded-full opacity-60 blur-sm" />
@@ -28,7 +45,7 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="container px-4 mx-auto relative z-10 pt-16 sm:pt-8 md:pt-0">
+      <div className="container px-4 mx-auto relative z-20 pt-16 sm:pt-8 md:pt-0">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
