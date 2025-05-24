@@ -59,7 +59,7 @@ const SponsorsSection = () => {
               className="w-full"
             >
               <div className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-green-500/50 transition-all hover:-translate-y-1 h-full">
-                <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+                <div className="flex flex-col md:flex-row gap-6 items-center">
                   <div className="bg-white p-3 rounded-lg mb-4 md:mb-0 w-full md:w-1/5 h-24 flex items-center justify-center flex-shrink-0">
                     <img 
                       src={sponsor.logo} 
@@ -67,7 +67,7 @@ const SponsorsSection = () => {
                       className="max-w-full max-h-full object-contain" 
                     />
                   </div>
-                  <div className="w-full md:w-4/5">
+                  <div className="w-full md:w-4/5 text-center md:text-left">
                     <div className="mb-3">
                       <h4 className="text-2xl font-bold text-white">{sponsor.name}</h4>
                     </div>
