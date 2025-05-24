@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
 import { ListPlus } from "lucide-react";
@@ -22,7 +23,7 @@ const sponsors = [
     description: "Women Who Code Korea는 기술 분야에서 여성의 참여와 리더십을 증진하는 커뮤니티입니다. 네트워킹 이벤트, 워크샵, 멘토링을 통해 여성 개발자들을 지원하며, 이번 대회를 통해 더 많은 여성들이 코딩에 도전할 수 있도록 격려합니다."
   },
   {
-    name: "inWe",
+    name: "I in We",
     logo: "/lovable-uploads/32994c4f-db26-4b6f-bb66-2ca70c488966.png",
     level: "Gold",
     description: "inWe는 혁신적인 디지털 솔루션을 제공하는 테크 스타트업으로, 사용자 중심의 접근 방식으로 기술과 사람을 연결합니다. 이번 바이브 코딩 챔피언십을 통해 창의적인 코딩 아이디어가 현실이 되는 과정을 지원합니다."
