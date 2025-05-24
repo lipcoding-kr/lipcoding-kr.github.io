@@ -6,7 +6,7 @@ import { ListPlus } from "lucide-react";
 const sponsors = [
   {
     name: "Microsoft",
-    logo: "/lovable-uploads/e53e32c2-489f-4e76-bf64-4fc4842c84ea.png",
+    logo: "/lovable-uploads/dd45eb43-fab5-4709-8b48-503deb4fe2b4.png",
     level: "Platinum",
     description: "마이크로소프트는 인공지능과 클라우드 컴퓨팅 솔루션을 제공하는 글로벌 기술 기업으로, GitHub Copilot을 통해 개발자들의 생산성을 향상시키는 도구를 제공합니다. 이번 바이브 코딩 챔피언십을 통해 AI 코딩 도구의 가능성을 함께 탐색합니다."
   },
@@ -60,7 +60,7 @@ const SponsorsSection = () => {
             >
               <div className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-green-500/50 transition-all hover:-translate-y-1 h-full">
                 <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
-                  <div className="bg-white p-4 rounded-lg mb-4 md:mb-0 w-full md:w-1/4 h-40 flex items-center justify-center flex-shrink-0">
+                  <div className="bg-white/90 p-4 rounded-lg mb-4 md:mb-0 w-full md:w-1/4 h-40 flex items-center justify-center flex-shrink-0">
                     <img 
                       src={sponsor.logo} 
                       alt={`${sponsor.name} 로고`} 
