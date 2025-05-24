@@ -1,16 +1,37 @@
-
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock, Volume2, VolumeX } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
+import { useState, useRef } from "react";
 
 const HeroSection = () => {
+  const [isMuted, setIsMuted] = useState(true);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+
+  const toggleMute = () => {
+    if (iframeRef.current) {
+      const iframe = iframeRef.current;
+      const currentSrc = iframe.src;
+      
+      if (isMuted) {
+        // Unmute by changing mute=1 to mute=0
+        iframe.src = currentSrc.replace('mute=1', 'mute=0');
+        setIsMuted(false);
+      } else {
+        // Mute by changing mute=0 to mute=1
+        iframe.src = currentSrc.replace('mute=0', 'mute=1');
+        setIsMuted(true);
+      }
+    }
+  };
+
   return (
     <section className="relative min-h-[110vh] md:min-h-[100vh] flex items-center justify-center overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <iframe
+          ref={iframeRef}
           src="https://www.youtube.com/embed/IUY0TJEwnGA?si=SRK--23DlHJVvUe4&controls=0&autoplay=1&loop=1&playlist=IUY0TJEwnGA&showinfo=0&rel=0&modestbranding=1&mute=1&enablejsapi=1&playsinline=1&start=1"
           className="w-full h-full object-cover scale-150"
           style={{
@@ -24,6 +45,19 @@ const HeroSection = () => {
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/70" />
       </div>
+
+      {/* Sound Control Button */}
+      <button
+        onClick={toggleMute}
+        className="absolute top-6 right-6 z-30 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full transition-all duration-300"
+        aria-label={isMuted ? "음성 켜기" : "음성 끄기"}
+      >
+        {isMuted ? (
+          <VolumeX className="w-5 h-5" />
+        ) : (
+          <Volume2 className="w-5 h-5" />
+        )}
+      </button>
 
       {/* Colorful Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
