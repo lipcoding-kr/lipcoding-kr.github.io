@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
@@ -91,7 +90,7 @@ const HeroSection = () => {
                 size="lg" 
                 className="bg-blue-600 hover:bg-blue-700 text-white text-lg sm:text-xl px-8 sm:px-12 py-3 sm:py-4 h-auto font-bold transition-all duration-300 hover:-translate-y-1"
               >
-                지금 지원하기 <ExternalLink className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
+                참가신청하기 <ExternalLink className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
             </a>
           </motion.div>
