@@ -6,7 +6,7 @@ import { Badge } from "./ui/badge";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative min-h-[110vh] md:min-h-[100vh] flex items-center justify-center overflow-hidden bg-black">
       {/* Colorful Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[20%] left-[15%] w-16 h-16 bg-blue-500 rounded-full opacity-80 blur-sm" />
