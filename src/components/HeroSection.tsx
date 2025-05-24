@@ -28,26 +28,26 @@ const HeroSection = () => {
         </div>
       </div>
       
-      <div className="container px-4 mx-auto relative z-10">
+      <div className="container px-4 mx-auto relative z-10 pt-16 sm:pt-8 md:pt-0">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <div className="flex flex-col space-y-2 mb-12">
+          <div className="flex flex-col space-y-2 mb-8 sm:mb-12">
             {/* Updated text as requested */}
-            <h1 className="text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold text-white mb-2 leading-none tracking-tight">
               천하제일
             </h1>
-            <h1 className="text-6xl md:text-8xl font-bold leading-none tracking-tight">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold leading-none tracking-tight">
               <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-transparent bg-clip-text">입코딩</span> <span className="text-white">대회</span>
             </h1>
             <div className="flex items-center justify-center gap-3">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-300 leading-none tracking-tight mt-2">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-300 leading-none tracking-tight mt-2">
                 with GitHub Copilot
               </h2>
-              <Badge className="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-1 text-sm font-semibold mt-2 transform -rotate-3">
+              <Badge className="bg-red-500 hover:bg-red-600 text-white rounded-full px-3 sm:px-4 py-1 text-xs sm:text-sm font-semibold mt-2 transform -rotate-3">
                 Coming Soon
               </Badge>
             </div>
@@ -57,9 +57,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mb-16"
+            className="mb-12 sm:mb-16"
           >
-            <p className="text-xl text-white/70 mb-8">
+            <p className="text-lg sm:text-xl text-white/70 mb-6 sm:mb-8 px-2">
               GitHub Copilot을 활용한 음성 기반 코딩 대회,<br />
               지금 바로 바이브 코딩에 도전하세요!
             </p>
@@ -71,9 +71,9 @@ const HeroSection = () => {
             >
               <Button 
                 size="lg" 
-                className="bg-blue-600 hover:bg-blue-700 text-white text-xl px-12 py-4 h-auto font-bold transition-all duration-300 hover:-translate-y-1"
+                className="bg-blue-600 hover:bg-blue-700 text-white text-lg sm:text-xl px-8 sm:px-12 py-3 sm:py-4 h-auto font-bold transition-all duration-300 hover:-translate-y-1"
               >
-                지금 지원하기 <ExternalLink className="ml-2 w-5 h-5" />
+                지금 지원하기 <ExternalLink className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
               </Button>
             </a>
           </motion.div>
