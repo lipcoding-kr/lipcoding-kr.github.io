@@ -68,15 +68,8 @@ const SponsorsSection = () => {
                     />
                   </div>
                   <div className="w-full md:w-3/4">
-                    <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-3">
+                    <div className="mb-3">
                       <h4 className="text-2xl font-bold text-white">{sponsor.name}</h4>
-                      <span className={`inline-block px-3 py-1 text-xs rounded ${
-                        sponsor.level === "Platinum" 
-                          ? "bg-blue-500/20 text-blue-300" 
-                          : "bg-yellow-500/20 text-yellow-300"
-                      } mb-2 md:mb-0`}>
-                        {sponsor.level}
-                      </span>
                     </div>
                     <p className="text-white/80 leading-relaxed">
                       {sponsor.description}
