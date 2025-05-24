@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
@@ -22,7 +21,7 @@ const HeroSection = () => {
           allowFullScreen
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/70" />
       </div>
 
       {/* Colorful Decorative Elements */}
