@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
@@ -49,7 +48,7 @@ const HeroSection = () => {
                 with GitHub Copilot
               </h2>
               <Badge className="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-1 text-sm font-semibold mt-2 transform -rotate-3">
-                LipCoding
+                Coming Soon
               </Badge>
             </div>
           </div>
