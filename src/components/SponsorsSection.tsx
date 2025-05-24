@@ -20,7 +20,7 @@ const sponsors = [
     name: "Women Who Code Korea",
     logo: "/lovable-uploads/c553b11a-90e5-4f2e-aed2-777aa45a18a7.png",
     level: "Gold",
-    description: "Women Who Code Korea는 기술 분야에서 여성의 참여와 리더십을 증진하는 커뮤니티입니다. 네트워킹 이벤트, 워크샵, 멘토링을 통해 여성 개발자들을 지원하며, 이번 대회를 통해 더 많은 여성들이 코딩에 도전할 수 있도록 격려합니다."
+    description: "위민후코드 코리아(Womxn Who Code Korea)는 IT분야에 종사하는 여성의 커리어 발전에 영감을 불어넣자는 미션을 가진 비영리조직입니다. 2018년 설립된 위민후코드 서울(글로벌 비영리 기구 Women Who Code의 지부)에 뿌리를 두고 2024년 새롭게 위민후코드 코리아로 리브랜딩 하였습니다."
   },
   {
     name: "I in We",
