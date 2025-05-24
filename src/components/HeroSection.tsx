@@ -11,14 +11,14 @@ const HeroSection = () => {
       {/* YouTube Video Background */}
       <div className="absolute inset-0 w-full h-full">
         <iframe
-          src="https://www.youtube.com/embed/IUY0TJEwnGA?si=SRK--23DlHJVvUe4&controls=0&autoplay=1&loop=1&playlist=IUY0TJEwnGA&showinfo=0&rel=0&modestbranding=1&mute=0"
+          src="https://www.youtube.com/embed/IUY0TJEwnGA?si=SRK--23DlHJVvUe4&controls=0&autoplay=1&loop=1&playlist=IUY0TJEwnGA&showinfo=0&rel=0&modestbranding=1&mute=1&enablejsapi=1&playsinline=1&start=1"
           className="w-full h-full object-cover scale-150"
           style={{
             minWidth: '100vw',
             minHeight: '100vh',
             pointerEvents: 'none'
           }}
-          allow="autoplay; encrypted-media"
+          allow="autoplay; encrypted-media; fullscreen"
           allowFullScreen
         />
         {/* Dark overlay for better text readability */}
