@@ -93,10 +93,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="flex-1">
-              <h3 className="text-gray-900 font-semibold text-sm mb-1">소리를 켜주세요!</h3>
-              <p className="text-gray-600 text-xs leading-relaxed">
-                더 생생한 경험을 위해 사운드를 활성화해보세요
-              </p>
+              <h3 className="text-gray-900 font-semibold text-sm">소리를 켜주세요!</h3>
             </div>
             <button
               onClick={() => setShowSoundTooltip(false)}
