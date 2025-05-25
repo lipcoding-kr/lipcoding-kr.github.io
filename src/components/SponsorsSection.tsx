@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Card, CardContent } from "./ui/card";
 import { ListPlus } from "lucide-react";
@@ -23,7 +22,7 @@ const sponsors = [
     description: "위민후코드 코리아(Womxn Who Code Korea)는 IT분야에 종사하는 여성의 커리어 발전에 영감을 불어넣자는 미션을 가진 비영리조직입니다. 2018년 설립된 위민후코드 서울(글로벌 비영리 기구 Women Who Code의 지부)에 뿌리를 두고 2024년 새롭게 위민후코드 코리아로 리브랜딩 하였습니다."
   },
   {
-    name: "I in We",
+    name: "아이인위 (I in We)",
     logo: "/lovable-uploads/32994c4f-db26-4b6f-bb66-2ca70c488966.png",
     level: "Gold",
     description: "아이인위(I in We)는 테크 분야의 여성 리더쉽 양성 비전 하에 활동하던 \"걸스인텍 코리아\"를 모태로 2024년에 창립된 비영리단체입니다. 저희는 (I) 개인이 먼저 본보기가 되고 (We) 개인이 속한 조직의 강점을 극대화하여 선한 영향력의 문화를 전파하는 것을 목표로 합니다."
