@@ -1,4 +1,3 @@
-
 import { useState, useRef, useEffect } from "react";
 import { Volume2, VolumeX, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
@@ -36,11 +35,11 @@ const VideoSection = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Show scroll tooltip after 25 seconds (when video is near end)
+  // Show scroll tooltip after 1 second (after video starts)
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowScrollTooltip(true);
-    }, 25000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
