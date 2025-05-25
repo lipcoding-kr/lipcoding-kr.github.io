@@ -1,11 +1,12 @@
 
 import { useState, useRef, useEffect } from "react";
-import { Volume2, VolumeX } from "lucide-react";
+import { Volume2, VolumeX, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 
 const VideoSection = () => {
   const [isMuted, setIsMuted] = useState(true);
   const [showSoundTooltip, setShowSoundTooltip] = useState(true);
+  const [showScrollTooltip, setShowScrollTooltip] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   const toggleMute = () => {
@@ -26,11 +27,20 @@ const VideoSection = () => {
     }
   };
 
-  // Auto hide tooltip after 5 seconds
+  // Auto hide sound tooltip after 5 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSoundTooltip(false);
     }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Show scroll tooltip after 25 seconds (when video is near end)
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowScrollTooltip(true);
+    }, 25000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -99,6 +109,30 @@ const VideoSection = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
+          </div>
+        </motion.div>
+      )}
+
+      {/* Scroll Down Tooltip */}
+      {showScrollTooltip && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
+          transition={{ duration: 0.8 }}
+          className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-40"
+        >
+          <div className="flex flex-col items-center gap-3">
+            <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
+              <p className="text-gray-900 font-medium text-sm">스크롤 아래로</p>
+            </div>
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="bg-white/80 backdrop-blur-sm rounded-full p-3 shadow-lg"
+            >
+              <ArrowDown className="w-6 h-6 text-gray-900" />
+            </motion.div>
           </div>
         </motion.div>
       )}
