@@ -7,7 +7,7 @@ const sponsors = [
     name: "Microsoft",
     logo: "/lovable-uploads/dd45eb43-fab5-4709-8b48-503deb4fe2b4.png",
     level: "Platinum",
-    description: "마이크로소프트는 인공지능과 클라우드 컴퓨팅 솔루션을 제공하는 글로벌 기술 기업으로, GitHub Copilot을 통해 개발자들의 생산성을 향상시키는 도구를 제공합니다. 이번 바이브 코딩 챔피언십을 통해 AI 코딩 도구의 가능성을 함께 탐색합니다."
+    description: "마이크로소프트는 온세상의 모든 사람들과 조직들이 더 많은 것들을 성취할 수 있도록 지원하는 것을 사명으로 삼고 있습니다. 따라서, 더 많은 개발자들이 GitHub Copilot을 통해 더 쉽게 앱을 개발하고 더 높은 생산성을 발휘할 수 있도록 클라우드와 AI 솔루션을 제공합니다."
   },
   {
     name: "Code; Without Barriers",
