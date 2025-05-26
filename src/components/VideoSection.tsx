@@ -114,11 +114,17 @@ const VideoSection = () => {
       {/* Scroll Down Tooltip */}
       {showScrollTooltip && (
         <motion.div
-          initial={{ opacity: 0, y: 20, x: "-50%" }} // Added x: "-50%"
-          animate={{ opacity: 1, y: 0, x: "-50%" }}   // Added x: "-50%"
-          exit={{ opacity: 0, y: 20, x: "-50%" }}     // Added x: "-50%"
+          initial={{ opacity: 0, y: 20, x: "-50%" }}
+          animate={{ opacity: 1, y: 0, x: "-50%" }}
+          exit={{ opacity: 0, y: 20, x: "-50%" }}
           transition={{ duration: 0.8 }}
-          className="absolute bottom-16 left-1/2 z-40" // Removed transform and -translate-x-1/2
+          className="absolute bottom-16 left-1/2 z-40 cursor-pointer" // Added cursor-pointer
+          onClick={() => {
+            const heroSection = document.getElementById('hero-section');
+            if (heroSection) {
+              heroSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
         >
           <div className="flex flex-col items-center gap-3">
             <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">

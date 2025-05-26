@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
@@ -7,7 +6,7 @@ import { Badge } from "./ui/badge";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[110vh] md:min-h-[100vh] flex flex-col md:flex-row md:items-center md:justify-center overflow-hidden bg-black">
+    <section id="hero-section" className="relative min-h-[110vh] md:min-h-[100vh] flex flex-col md:flex-row md:items-center md:justify-center overflow-hidden bg-black">
       {/* Colorful Decorative Elements - Hidden on mobile to avoid clutter */}
       <div className="hidden md:block absolute inset-0 overflow-hidden pointer-events-none z-10">
         <div className="absolute top-[20%] left-[15%] w-16 h-16 bg-blue-500 rounded-full opacity-80 blur-sm" />
