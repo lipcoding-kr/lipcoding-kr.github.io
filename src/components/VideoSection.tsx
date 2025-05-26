@@ -47,15 +47,14 @@ const VideoSection = () => {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       {/* YouTube Video Background - Full screen */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full overflow-hidden flex justify-center items-center p-0 md:p-8"> {/* MODIFIED */}
         <iframe
           ref={iframeRef}
           src="https://www.youtube.com/embed/IUY0TJEwnGA?si=SRK--23DlHJVvUe4&controls=0&autoplay=1&loop=1&playlist=IUY0TJEwnGA&showinfo=0&rel=0&modestbranding=1&mute=1&enablejsapi=1&playsinline=1&start=1"
-          className="w-full h-full object-cover scale-150"
-          style={{
-            minWidth: '100%',
-            minHeight: '100%',
-            pointerEvents: 'none'
+          className="block w-screen h-[56.25vw] md:w-full md:h-full md:aspect-video" // MODIFIED
+          style={{ // MODIFIED
+            pointerEvents: 'none',
+            border: 'none'
           }}
           allow="autoplay; encrypted-media; fullscreen"
           allowFullScreen
@@ -115,11 +114,11 @@ const VideoSection = () => {
       {/* Scroll Down Tooltip */}
       {showScrollTooltip && (
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 20, x: "-50%" }} // Added x: "-50%"
+          animate={{ opacity: 1, y: 0, x: "-50%" }}   // Added x: "-50%"
+          exit={{ opacity: 0, y: 20, x: "-50%" }}     // Added x: "-50%"
           transition={{ duration: 0.8 }}
-          className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-40"
+          className="absolute bottom-16 left-1/2 z-40" // Removed transform and -translate-x-1/2
         >
           <div className="flex flex-col items-center gap-3">
             <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
