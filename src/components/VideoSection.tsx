@@ -9,19 +9,23 @@ const VideoSection = () => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   const toggleMute = () => {
-    if (iframeRef.current) {
-      const iframe = iframeRef.current;
-      const currentSrc = iframe.src;
-      
-      if (isMuted) {
-        // Unmute by changing mute=1 to mute=0
-        iframe.src = currentSrc.replace('mute=1', 'mute=0');
-        setIsMuted(false);
+    if (iframeRef.current && iframeRef.current.contentWindow) {
+      const newMutedState = !isMuted;
+      const command = newMutedState ? "mute" : "unMute";
+
+      iframeRef.current.contentWindow.postMessage(
+        JSON.stringify({
+          event: "command",
+          func: command,
+          args: [],
+        }),
+        "*" // For security, you could use "https://www.youtube.com"
+      );
+
+      setIsMuted(newMutedState);
+      if (!newMutedState) {
+        // If unmuting, hide the sound tooltip
         setShowSoundTooltip(false);
-      } else {
-        // Mute by changing mute=0 to mute=1
-        iframe.src = currentSrc.replace('mute=0', 'mute=1');
-        setIsMuted(true);
       }
     }
   };
