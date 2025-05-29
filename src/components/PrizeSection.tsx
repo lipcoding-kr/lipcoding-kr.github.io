@@ -12,7 +12,7 @@ const PrizeSection = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[10%] right-[10%] w-20 h-20 bg-blue-500 rounded-full opacity-20 blur-xl" />
         <div className="absolute bottom-[10%] left-[10%] w-32 h-32 bg-green-500 rounded-full opacity-20 blur-xl" />
-        
+
         {/* Decorative circles like in the reference */}
         <div className="absolute bottom-[30%] right-[15%]">
           <div className="w-8 h-8 bg-red-500 rounded-full opacity-80"></div>
@@ -20,7 +20,7 @@ const PrizeSection = () => {
           <div className="w-8 h-8 bg-red-300 rounded-full opacity-80 ml-8"></div>
         </div>
       </div>
-      
+
       <div className="container px-4 mx-auto relative z-10">
         <div className="mb-16 text-center">
           <div className="mb-4 inline-block px-2 py-1 border border-white/20 rounded text-sm text-white/80">
@@ -50,9 +50,9 @@ const PrizeSection = () => {
             </div>
             <div className="bg-white/5 rounded-lg p-4 mb-4">
               <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
-                <img 
-                  src="/lovable-uploads/5af7d938-ff77-43b9-8506-7ce8d775b402.png" 
-                  alt="Xbox Series S console with controller" 
+                <img
+                  src="/images/5af7d938-ff77-43b9-8506-7ce8d775b402.png"
+                  alt="Xbox Series S console with controller"
                   className="object-contain w-full h-full"
                 />
               </AspectRatio>
@@ -76,9 +76,9 @@ const PrizeSection = () => {
             </div>
             <div className="bg-white/5 rounded-lg p-4 mb-4">
               <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
-                <img 
-                  src="/lovable-uploads/ceebd8b0-0a6a-4fe6-a84b-130633dd2bc2.png" 
-                  alt="Nintendo Switch console" 
+                <img
+                  src="/images/ceebd8b0-0a6a-4fe6-a84b-130633dd2bc2.png"
+                  alt="Nintendo Switch console"
                   className="object-contain w-full h-full"
                 />
               </AspectRatio>
@@ -88,7 +88,7 @@ const PrizeSection = () => {
               </div>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -102,9 +102,9 @@ const PrizeSection = () => {
             </div>
             <div className="bg-white/5 rounded-lg p-4 mb-4">
               <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
-                <img 
-                  src="/lovable-uploads/45c20fd6-c525-4a3f-ac25-30edbcbfb37c.png" 
-                  alt="AirPods Pro earbuds" 
+                <img
+                  src="/images/45c20fd6-c525-4a3f-ac25-30edbcbfb37c.png"
+                  alt="AirPods Pro earbuds"
                   className="object-contain w-full h-full"
                 />
               </AspectRatio>
@@ -114,7 +114,7 @@ const PrizeSection = () => {
               </div>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -128,9 +128,9 @@ const PrizeSection = () => {
             </div>
             <div className="bg-white/5 rounded-lg p-4 mb-4">
               <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
-                <img 
-                  src="/lovable-uploads/f4123bcd-57ba-4738-a70a-a9c4113b0778.png" 
-                  alt="Microsoft keyboard and mouse" 
+                <img
+                  src="/images/f4123bcd-57ba-4738-a70a-a9c4113b0778.png"
+                  alt="Microsoft keyboard and mouse"
                   className="object-contain w-full h-full"
                 />
               </AspectRatio>
