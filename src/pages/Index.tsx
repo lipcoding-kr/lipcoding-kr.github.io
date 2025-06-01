@@ -2,6 +2,7 @@
 import VideoSection from "@/components/VideoSection";
 import HeroSection from "@/components/HeroSection";
 import SponsorsSection from "@/components/SponsorsSection";
+import PrizeSection from '@/components/PrizeSection';
 
 const Index = () => {
   return (
@@ -9,7 +10,7 @@ const Index = () => {
       <VideoSection />
       <HeroSection />
       <SponsorsSection />
-      {/* Add additional sections here as needed */}
+      <PrizeSection />
     </main>
   );
 };

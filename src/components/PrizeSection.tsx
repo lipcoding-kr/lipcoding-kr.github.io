@@ -32,6 +32,8 @@ const PrizeSection = () => {
           </h2>
           <p className="text-white/70 text-xl md:text-2xl mt-6">
             코딩 챌린지를 완료하고 다양한 상품과 경험을 획득하세요!
+            <br />
+            (제세공과금 본인 부담)
           </p>
         </div>
 
@@ -51,7 +53,7 @@ const PrizeSection = () => {
             <div className="bg-white/5 rounded-lg p-4 mb-4">
               <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
                 <img
-                  src="/images/5af7d938-ff77-43b9-8506-7ce8d775b402.png"
+                  src="/images/x-box.png"
                   alt="Xbox Series S console with controller"
                   className="object-contain w-full h-full"
                 />
@@ -77,7 +79,7 @@ const PrizeSection = () => {
             <div className="bg-white/5 rounded-lg p-4 mb-4">
               <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
                 <img
-                  src="/images/ceebd8b0-0a6a-4fe6-a84b-130633dd2bc2.png"
+                  src="/images/nintendo-switch.png"
                   alt="Nintendo Switch console"
                   className="object-contain w-full h-full"
                 />
@@ -88,58 +90,12 @@ const PrizeSection = () => {
               </div>
             </div>
           </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
-          >
-            <div className="mb-6">
-              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
-                <Medal className="h-6 w-6 text-green-400" /> 우수상 (1명)
-              </h3>
-            </div>
-            <div className="bg-white/5 rounded-lg p-4 mb-4">
-              <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
-                <img
-                  src="/images/45c20fd6-c525-4a3f-ac25-30edbcbfb37c.png"
-                  alt="AirPods Pro earbuds"
-                  className="object-contain w-full h-full"
-                />
-              </AspectRatio>
-              <div className="text-xl font-bold text-white">
-                <Headphones className="h-5 w-5 text-blue-400 inline-block mr-2" />
-                상품: 에어팟 프로
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
-          >
-            <div className="mb-6">
-              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
-                <Medal className="h-6 w-6 text-purple-400" /> 장려상 (1명)
-              </h3>
-            </div>
-            <div className="bg-white/5 rounded-lg p-4 mb-4">
-              <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
-                <img
-                  src="/images/f4123bcd-57ba-4738-a70a-a9c4113b0778.png"
-                  alt="Microsoft keyboard and mouse"
-                  className="object-contain w-full h-full"
-                />
-              </AspectRatio>
-              <div className="text-xl font-bold text-white">
-                <Keyboard className="h-5 w-5 text-blue-400 inline-block mr-2" />
-                상품: 키보드/마우스
-              </div>
-            </div>
-          </motion.div>
+        </div>
+        <div className="mt-12 text-center">
+          <Badge variant="secondary" className="mb-2 text-xl md:text-2xl">
+            <Gift className="h-4 w-4 mr-1 inline-block" />
+            이외에도 다양한 경품이 준비되어 있으며, 모든 참가자에게 특별한 기념품을 드립니다!
+          </Badge>
         </div>
       </div>
     </section>
