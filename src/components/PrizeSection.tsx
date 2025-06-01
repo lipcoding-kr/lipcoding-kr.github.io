@@ -92,10 +92,11 @@ const PrizeSection = () => {
           </motion.div>
         </div>
         <div className="mt-12 text-center">
-          <Badge variant="secondary" className="mb-2 text-xl md:text-2xl">
-            <Gift className="h-4 w-4 mr-1 inline-block" />
-            이외에도 다양한 경품이 준비되어 있으며, 모든 참가자에게 특별한 기념품을 드립니다!
-          </Badge>
+          <p className="text-white/70 text-xl md:text-2xl mt-6">
+            이외에도 다양한 경품이 준비되어 있으며
+            <br />
+            모든 참가자에게 특별한 기념품을 드립니다!
+          </p>
         </div>
       </div>
     </section>
