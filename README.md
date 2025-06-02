@@ -1,8 +1,9 @@
 # 천하제일 입코딩 대회
 
-## 사용 도구 및 참고 프로젝트
+## 주요 도구 및 참고 자료
 
 - GitHub Copilot
+- GitHub Pages
 - Lovable's [sleekbloghaven project](https://lovable.dev/projects/ec05ba79-234e-4be5-a727-83aee50417dc)
 
 ## 기여 방법
