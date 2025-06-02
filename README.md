@@ -1,58 +1,32 @@
-# Welcome to your Lovable project
+# 천하제일 입코딩 대회
 
-## Project info
+## 사용 도구 및 참고 프로젝트
 
-**URL**: https://lovable.dev/projects/ec05ba79-234e-4be5-a727-83aee50417dc
+- GitHub Copilot
+- Lovable's [sleekbloghaven project](https://lovable.dev/projects/ec05ba79-234e-4be5-a727-83aee50417dc)
 
-## How can I edit this code?
+## 기여 방법
 
-There are several ways of editing your application.
+1. Node.js와 npm 준비
+  - [nvm을 사용한 설치 방법](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/ec05ba79-234e-4be5-a727-83aee50417dc) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+2. 로컬 개발환경 세팅
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1단계: 저장소 클론
+git clone https://github.com/lipcoding-kr/lipcoding-kr.github.io.git
 
-# Step 2: Navigate to the project directory.
+# 2단계: 클론받은 저장소 위치로 이동
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
+# 3단계: 필요한 패키지 설치
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4단계: 로컬 개발 서버 실행
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
+## 기술 스택
 
 - Vite
 - TypeScript
@@ -60,10 +34,7 @@ This project is built with .
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ec05ba79-234e-4be5-a727-83aee50417dc) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 기여자
+- [이지영](https://github.com/jjjjiyoung): 디자인 및 개발
+- [이보라](https://github.com/Violet-Bora-Lee): 개발
+- [저스틴 유](https://github.com/justinyoo): 개발
