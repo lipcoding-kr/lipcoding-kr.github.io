@@ -1,9 +1,7 @@
 
 import { motion } from "framer-motion";
-import { Trophy, Award, Gamepad2 } from "lucide-react";
-import { AspectRatio } from "./ui/aspect-ratio";
 import { Button } from "./ui/button";
-import { MapPin, Users, ExternalLink, Clock } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const KeynoteSection = () => {
   return (
@@ -59,7 +57,7 @@ const KeynoteSection = () => {
             Klaire는 GitHub의 엔지니어링 리더로, 현재 Copilot의 메트릭 및 텔레메트리 인프라를 총괄하고 있습니다. 소프트웨어 엔지니어링, 데이터 분석, AI 기반 제품 개발에 대한 깊은 경험을 바탕으로, 내부 및 외부 이해관계자에게 유의미한 인사이트를 제공하는 확장 가능한 시스템 구축에 집중하고 있습니다. Klaire는 개발자 생산성 향상, 고성과 팀 육성, 데이터 기반 의사결정을 통한 비즈니스 임팩트 창출에 열정을 가지고 있습니다.
           </p>
         </div>
-        
+
         <div className="mt-8 text-center">
           <a
             href="https://www.linkedin.com/in/klaire-baek/"
