@@ -44,8 +44,8 @@ const PrizeSection = () => {
             className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
           >
             <div className="mb-6">
-              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
-                <Trophy className="h-6 w-6 text-yellow-500" /> 대상 (1명)
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white flex items-center gap-2">
+                <Trophy className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-500" /> 대상 (1명)
               </h3>
             </div>
             <div className="bg-white/5 rounded-lg p-4 mb-4">
@@ -56,8 +56,8 @@ const PrizeSection = () => {
                   className="object-contain w-full h-full"
                 />
               </AspectRatio>
-              <div className="text-xl font-bold text-white">
-                <Gamepad2 className="h-5 w-5 text-blue-400 inline-block mr-2" />
+              <div className="text-lg sm:text-xl font-bold text-white">
+                <Gamepad2 className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400 inline-block mr-2" />
                 상품: 엑스박스
               </div>
             </div>
@@ -70,8 +70,8 @@ const PrizeSection = () => {
             className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
           >
             <div className="mb-6">
-              <h3 className="text-3xl font-bold text-white flex items-center gap-2">
-                <Award className="h-6 w-6 text-blue-400" /> 최우수상 (1명)
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white flex items-center gap-2">
+                <Award className="h-5 w-5 sm:h-6 sm:w-6 text-blue-400" /> 최우수상 (1명)
               </h3>
             </div>
             <div className="bg-white/5 rounded-lg p-4 mb-4">
@@ -82,15 +82,15 @@ const PrizeSection = () => {
                   className="object-contain w-full h-full"
                 />
               </AspectRatio>
-              <div className="text-xl font-bold text-white">
-                <Gamepad2 className="h-5 w-5 text-blue-400 inline-block mr-2" />
+              <div className="text-lg sm:text-xl font-bold text-white">
+                <Gamepad2 className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400 inline-block mr-2" />
                 상품: 닌텐도스위치
               </div>
             </div>
           </motion.div>
         </div>
         <div className="mt-12 text-center">
-          <p className="text-white/70 text-xl md:text-2xl mt-6">
+          <p className="text-white/70 text-base sm:text-lg md:text-xl mt-6">
             이외에도 다양한 경품이 준비되어 있으며
             <br />
             모든 참가자에게 특별한 기념품을 드립니다!
