@@ -24,13 +24,13 @@ const KeynoteSection = () => {
           <div className="mb-4 inline-block px-2 py-1 border border-white/20 rounded text-sm text-white/80">
             키노트 스피커
           </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-normal tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-normal tracking-tight">
             Klair Baek<br />
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-green-400 text-transparent bg-clip-text text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
               내 동료 AI 개발자와 함께 만들어가는 미래
             </span>
           </h2>
-          <p className="text-white/70 text-base sm:text-lg md:text-xl mt-6">
+          <p className="text-white/70 text-sm sm:text-base md:text-lg lg:text-xl mt-6">
            Staff Manager, Engineering - Copilot
           </p>
         </div>
