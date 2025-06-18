@@ -41,16 +41,14 @@ const KeynoteSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-6 border border-white/10"
+            className="bg-zinc-900/60 backdrop-blur-sm rounded-xl p-4 border border-white/10"
           >
-            <div className="bg-white/5 rounded-lg p-4 mb-4">
-              <AspectRatio ratio={4/3} className="bg-black/40 rounded-md overflow-hidden mb-4">
-                <img
-                  src="/images/klair-baek.png"
-                  alt="Klair Baek, Staff Manager, Engineering - Copilot"
-                  className="object-contain w-full h-full"
-                />
-              </AspectRatio>
+            <div className="rounded-lg overflow-hidden">
+              <img
+                src="/images/klair-baek.png"
+                alt="Klair Baek, Staff Manager, Engineering - Copilot"
+                className="w-full h-auto object-cover"
+              />
             </div>
           </motion.div>
         </div>
