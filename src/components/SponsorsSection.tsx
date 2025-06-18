@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { Card, CardContent } from "./ui/card";
-import { ListPlus } from "lucide-react";
 
 const sponsors = [
   {

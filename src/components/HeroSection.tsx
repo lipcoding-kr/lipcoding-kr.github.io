@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
-import { ArrowRight, Calendar, MapPin, Users, ExternalLink, Mic, Laptop, Headphones, Clock } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import { MapPin, Users, ExternalLink, Clock } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 const HeroSection = () => {
@@ -13,21 +12,21 @@ const HeroSection = () => {
         <div className="absolute top-[30%] right-[10%] w-12 h-12 bg-green-500 rounded-full opacity-80 blur-sm" />
         <div className="absolute bottom-[20%] left-[20%] w-20 h-20 bg-indigo-600 rounded-full opacity-60 blur-sm" />
         <div className="absolute bottom-[25%] right-[15%] w-24 h-24 bg-red-500 rounded-full opacity-50 blur-sm" />
-        
+
         {/* Circular elements like in the reference */}
         <div className="absolute top-[50%] left-[5%]">
           <div className="w-8 h-8 bg-blue-600 rounded-full opacity-80"></div>
           <div className="w-8 h-8 bg-blue-500 rounded-full opacity-80 ml-4"></div>
           <div className="w-8 h-8 bg-blue-400 rounded-full opacity-80 ml-8"></div>
         </div>
-        
+
         <div className="absolute top-[20%] right-[20%]">
           <div className="w-6 h-6 bg-green-500 rounded-full opacity-80"></div>
           <div className="w-6 h-6 bg-green-400 rounded-full opacity-80 ml-3"></div>
           <div className="w-6 h-6 bg-green-300 rounded-full opacity-80 ml-6"></div>
         </div>
       </div>
-      
+
       {/* Main content container */}
       <div className="flex-1 flex items-center justify-center z-20">
         <div className="container px-4 mx-auto relative pt-8 md:pt-16 lg:pt-0">
@@ -55,7 +54,7 @@ const HeroSection = () => {
                 </Badge>
               </div>
             </div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -66,14 +65,14 @@ const HeroSection = () => {
                 GitHub Copilot을 활용한 음성 기반 코딩 대회,<br />
                 지금 바로 바이브 코딩에 도전하세요!
               </p>
-              <a 
-                href="https://aka.ms/lipcoding/register" 
-                target="_blank" 
+              <a
+                href="https://aka.ms/lipcoding/register"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block"
               >
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="bg-blue-600 hover:bg-blue-700 text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 md:px-12 py-3 sm:py-4 h-auto font-bold transition-all duration-300 hover:-translate-y-1"
                 >
                   참가 신청하기 <ExternalLink className="ml-2 w-4 h-4 sm:w-5 sm:h-5" />
@@ -81,7 +80,7 @@ const HeroSection = () => {
               </a>
             </motion.div>
           </motion.div>
-          
+
           {/* Event Info in modern cards */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -100,7 +99,7 @@ const HeroSection = () => {
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="p-4 border border-white/10 rounded-lg">
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-blue-400 mt-0.5 shrink-0" />
@@ -110,7 +109,7 @@ const HeroSection = () => {
                     </span>
                   </div>
                 </div>
-                
+
                 <div className="p-4 border border-white/10 rounded-lg">
                   <div className="flex items-start gap-3">
                     <Users className="h-5 w-5 text-blue-400 mt-0.5 shrink-0" />

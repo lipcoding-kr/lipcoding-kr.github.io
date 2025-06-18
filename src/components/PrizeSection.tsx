@@ -1,8 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Trophy, Gift, Award, Medal, Gamepad2, Headphones, Keyboard } from "lucide-react";
-import { Badge } from "./ui/badge";
+import { Trophy, Award, Gamepad2 } from "lucide-react";
 import { AspectRatio } from "./ui/aspect-ratio";
 
 const PrizeSection = () => {
