@@ -62,7 +62,7 @@ const KeynoteSection = () => {
         
         <div className="mt-8 text-center">
           <a
-            href="https://aka.ms/lipcoding/register"
+            href="https://www.linkedin.com/in/klaire-baek/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block"
