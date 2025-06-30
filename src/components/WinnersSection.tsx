@@ -31,7 +31,7 @@ const WinnersSection = () => {
     },
     {
       rank: "3위",
-      prize: "입찰됐었게",
+      prize: "입잘털었제",
       name: "이찬영", 
       githubId: "@coldzero94",
       repository: "coldzero94/lipcoding",
