@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { MapPin, Users, ExternalLink, Clock } from "lucide-react";
-import { Badge } from "./ui/badge";
+import { Badge } from "@/components/ui/badge";
 
 const HeroSection = () => {
   return (

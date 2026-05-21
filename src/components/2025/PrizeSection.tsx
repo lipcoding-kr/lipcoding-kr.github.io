@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Trophy, Award, Gamepad2 } from "lucide-react";
-import { AspectRatio } from "./ui/aspect-ratio";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 const PrizeSection = () => {
   return (

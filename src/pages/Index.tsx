@@ -1,18 +1,19 @@
-
-import VideoSection from "@/components/VideoSection";
-import HeroSection from "@/components/HeroSection";
-import KeynoteSection from "@/components/KeynoteSection";
-import SponsorsSection from "@/components/SponsorsSection";
-import PrizeSection from "@/components/PrizeSection";
-import WinnersSection from "@/components/WinnersSection";
+import VideoSection from "@/components/2026/VideoSection";
+import HeroSection from "@/components/2026/HeroSection";
+import PastEventCard from "@/components/2026/PastEventCard";
+import KeynoteSection from "@/components/2026/KeynoteSection";
+import ScheduleSection from "@/components/2026/ScheduleSection";
+import PrizeSection from "@/components/2026/PrizeSection";
+import SponsorsSection from "@/components/2026/SponsorsSection";
 
 const Index = () => {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-ink-0">
       <VideoSection />
       <HeroSection />
-      <WinnersSection />
+      <PastEventCard />
       <KeynoteSection />
+      <ScheduleSection />
       <PrizeSection />
       <SponsorsSection />
     </main>
