@@ -3,6 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      // SPA redirect decoder — restores deep links from /404.html redirect
+      // See https://github.com/rafgraph/spa-github-pages
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
     <title>천하제일 입코딩 대회 2026 - GitHub Copilot과 함께하는 음성 바이브 코딩 챌린지</title>
     <meta name="description" content="2026년 6월 20일 광화문 마이크로소프트에서 열리는 음성 코딩 해커톤. GitHub Copilot의 보이스 기능으로 앱을 만들어 봅시다." />
     <meta name="author" content="입코딩 대회 운영진" />
