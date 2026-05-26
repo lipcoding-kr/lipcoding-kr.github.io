@@ -114,7 +114,7 @@ const PrizeSection = () => {
               <p className="text-white/70 text-sm md:text-base">
                 위 입상자 상품에 더해 우수작은{" "}
                 <span className="text-white font-bold">메가존 클라우드</span>에서 선정하여{" "}
-                <span className="text-mint font-bold">1500만원 상당의 제품화 컨설팅</span>을 제공합니다.
+                <span className="text-mint font-bold">1,500만원 상당의 제품화 컨설팅</span>을 제공합니다.
               </p>
             </div>
           </div>
