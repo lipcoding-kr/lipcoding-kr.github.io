@@ -96,11 +96,24 @@ const PrizeSection = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="glass-card rounded-2xl p-6 md:p-8"
         >
-          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
-            <div className="shrink-0 text-4xl">🚀</div>
+          <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-8 text-center sm:text-left">
+            <a
+              href="https://www.megazone.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 bg-white rounded-xl px-6 py-4 flex items-center justify-center transition-transform hover:-translate-y-0.5"
+            >
+              <img
+                src="https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/sponsor-megazonecloud.png"
+                alt="메가존 클라우드"
+                className="h-8 md:h-10 object-contain"
+                loading="lazy"
+              />
+            </a>
             <div className="flex-1">
               <p className="text-white/70 text-sm md:text-base">
-                위 입상자 상품에 더해 입상자 중 메가존 클라우드에서 선정하여{" "}
+                위 입상자 상품에 더해 입상자 중{" "}
+                <span className="text-white font-bold">메가존 클라우드</span>에서 선정하여{" "}
                 <span className="text-mint font-bold">1500만원 상당의 제품화 컨설팅</span>을 제공합니다.
               </p>
             </div>
