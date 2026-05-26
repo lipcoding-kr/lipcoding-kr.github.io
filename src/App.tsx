@@ -6,8 +6,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Index2025 from "./pages/Index2025";
 import NotFound from "./pages/NotFound";
+import { usePageTracking } from "@/hooks/use-page-tracking";
 
 const queryClient = new QueryClient();
+
+const AppRoutes = () => {
+  usePageTracking();
+  return (
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/2025" element={<Index2025 />} />
+      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -15,12 +28,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/2025" element={<Index2025 />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <AppRoutes />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
