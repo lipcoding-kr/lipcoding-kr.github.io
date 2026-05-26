@@ -1,16 +1,43 @@
 import { motion } from "framer-motion";
-import { Gift } from "lucide-react";
 
-const PRIZES = [
-  { emoji: "🥇", title: "대상", sub: "1명 또는 1팀", highlight: true },
-  { emoji: "🥈", title: "최우수상", sub: "1명 또는 1팀" },
-  { emoji: "🥉", title: "우수상", sub: "1명 또는 1팀" },
+type Prize = {
+  medal: string;
+  rank: string;
+  sub: string;
+  img: string;
+  name: string;
+  highlight?: boolean;
+};
+
+const PRIZES: Prize[] = [
+  {
+    medal: "🥇",
+    rank: "대상",
+    sub: "1명 또는 1팀",
+    img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/prize-xbox-series-s.png",
+    name: "Xbox Series S",
+    highlight: true,
+  },
+  {
+    medal: "🥈",
+    rank: "최우수상",
+    sub: "1명 또는 1팀",
+    img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/prize-jabra-evolve3-85.png",
+    name: "Jabra Evolve3 85",
+  },
+  {
+    medal: "🥉",
+    rank: "우수상",
+    sub: "1명 또는 1팀",
+    img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/prize-jabra-evolve3-75.png",
+    name: "Jabra Evolve3 75",
+  },
 ];
 
 const PrizeSection = () => {
   return (
-    <section className="relative py-24 px-4 bg-ink-1 font-display overflow-hidden">
-      <div className="absolute inset-0 halftone-dots-corner opacity-10 pointer-events-none" />
+    <section className="relative py-24 px-4 bg-ink-0 font-display overflow-hidden">
+      <div className="absolute inset-0 halftone-dots opacity-15 pointer-events-none" />
 
       <div className="container relative z-10 mx-auto max-w-5xl">
         <motion.div
@@ -24,28 +51,40 @@ const PrizeSection = () => {
             Prizes
           </div>
           <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white mb-3">
-            <span className="text-mint">상</span> &amp; 상품
+            🏆 입상자 <span className="text-mint">상품</span>
           </h2>
-          <p className="text-white/60 text-base md:text-lg">
-            입상자에게는 아래와 같은 상품을 제공합니다.
-          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
           {PRIZES.map((prize, i) => (
             <motion.div
-              key={prize.title}
+              key={prize.rank}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass-card rounded-2xl p-8 text-center"
+              className={`glass-card rounded-2xl p-6 md:p-8 text-center flex flex-col ${
+                prize.highlight ? "ring-1 ring-mint/40" : ""
+              }`}
             >
-              <div className="text-5xl md:text-6xl mb-4">{prize.emoji}</div>
-              <h3 className="text-xl md:text-2xl font-bold mb-1 text-white">
-                {prize.title}
+              <div className="text-5xl mb-3">{prize.medal}</div>
+              <h3
+                className={`text-xl md:text-2xl font-bold mb-1 ${
+                  prize.highlight ? "text-mint" : "text-white"
+                }`}
+              >
+                {prize.rank}
               </h3>
-              <p className="text-white/50 text-sm">{prize.sub}</p>
+              <p className="text-white/50 text-sm mb-6">{prize.sub}</p>
+              <div className="flex-1 flex items-center justify-center bg-white rounded-xl p-4 mb-4 min-h-[180px]">
+                <img
+                  src={prize.img}
+                  alt={prize.name}
+                  className="max-h-40 md:max-h-44 max-w-full object-contain"
+                  loading="lazy"
+                />
+              </div>
+              <p className="text-white font-semibold text-sm md:text-base">{prize.name}</p>
             </motion.div>
           ))}
         </div>
@@ -58,23 +97,15 @@ const PrizeSection = () => {
           className="glass-card rounded-2xl p-6 md:p-8"
         >
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-center sm:text-left">
-            <div className="shrink-0 w-14 h-14 rounded-xl bg-white/[0.06] border border-white/10 flex items-center justify-center">
-              <Gift className="w-7 h-7 text-white/80" />
-            </div>
+            <div className="shrink-0 text-4xl">🚀</div>
             <div className="flex-1">
-              <h3 className="text-lg md:text-xl font-bold text-white mb-1">
-                참가자 기념품
-              </h3>
-              <p className="text-white/60 text-sm md:text-base">
-                모든 참가자에게 천하제일 입코딩 대회에서만 받을 수 있는 특별한 기념품을 제공합니다.
+              <p className="text-white/70 text-sm md:text-base">
+                위 입상자 상품에 더해 입상자 중 메가존 클라우드에서 선정하여{" "}
+                <span className="text-mint font-bold">1500만원 상당의 제품화 컨설팅</span>을 제공합니다.
               </p>
             </div>
           </div>
         </motion.div>
-
-        <p className="text-center text-white/40 text-sm mt-6">
-          자세한 내용은 추후 안내합니다.
-        </p>
       </div>
     </section>
   );
