@@ -144,20 +144,23 @@ const SponsorsSection = () => {
             <p className="text-white/60 text-base md:text-lg mb-8 max-w-xl mx-auto">
               자리는 한정적입니다. 음성으로 코딩하는 새로운 경험을 놓치지 마세요.
             </p>
-            <motion.a
-              href={TICKETA_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-              animate={{ scale: [1, 1.03, 1] }}
-              transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut", repeatDelay: 0.4 }}
-              whileHover={{ scale: 1.06, y: -2 }}
-              whileTap={{ scale: 0.97 }}
-            >
-              <button className="bg-[#2ea043] text-white hover:bg-[#46c860] text-base font-bold px-8 py-4 rounded-xl transition-all border border-[#46c860]/20 shadow-lg shadow-[#2ea043]/20">
-                신청하기 →
+            <a href={TICKETA_URL} target="_blank" rel="noopener noreferrer">
+              <button className="bg-[#2ea043] text-white hover:bg-[#46c860] text-base font-bold px-8 py-4 rounded-xl transition-all border border-[#46c860]/20">
+                신청하기{" "}
+                <motion.span
+                  className="inline-block ml-1"
+                  animate={{ y: [0, -4, 0, -2, 0] }}
+                  transition={{
+                    duration: 1.4,
+                    repeat: Infinity,
+                    ease: "easeOut",
+                    repeatDelay: 0.8,
+                  }}
+                >
+                  →
+                </motion.span>
               </button>
-            </motion.a>
+            </a>
             <p className="text-white/40 text-xs mt-6">
               문의: <a href="https://lipcoding.kr/discussions" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white hover:underline">lipcoding.kr/discussions</a>
             </p>

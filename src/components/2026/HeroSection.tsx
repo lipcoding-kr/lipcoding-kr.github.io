@@ -69,7 +69,18 @@ const HeroSection = () => {
                 className="bg-[#2ea043] text-white hover:bg-[#46c860] text-base font-bold px-8 py-6 h-auto rounded-xl transition-all border border-[#46c860]/20"
               >
                 참가 신청하기
-                <ExternalLink className="ml-2 w-4 h-4" />
+                <motion.span
+                  className="ml-2 inline-flex"
+                  animate={{ y: [0, -4, 0, -2, 0] }}
+                  transition={{
+                    duration: 1.4,
+                    repeat: Infinity,
+                    ease: "easeOut",
+                    repeatDelay: 0.8,
+                  }}
+                >
+                  <ExternalLink className="w-4 h-4" />
+                </motion.span>
               </Button>
             </a>
           </motion.div>
