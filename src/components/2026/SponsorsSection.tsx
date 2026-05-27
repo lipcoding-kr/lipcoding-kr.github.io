@@ -26,7 +26,7 @@ const HOSTS: Partner[] = [
 
 const SPONSORS: Partner[] = [
   {
-    name: "메가존 클라우드",
+    name: "메가존클라우드",
     url: "https://www.megazone.com",
     img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/sponsor-megazonecloud.png",
     description: "AI Native 기업이자 Microsoft·GitHub 기업파트너인 메가존클라우드가 ‘천하제일 입코딩 대회’와 함께합니다. ”직접 걸어보지 않은 길은 안내하지 않는다”는 철학 아래, Customer Zero로서 AI를 직접 도입·검증한 메가존클라우드가 대한민국 개발자들의 도전을 응원합니다.",
