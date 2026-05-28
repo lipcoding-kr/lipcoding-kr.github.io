@@ -14,8 +14,8 @@ const PRIZES: Prize[] = [
     medal: "🥇",
     rank: "대상",
     sub: "1명 또는 1팀",
-    img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/prize-xbox-series-s.png",
-    name: "Xbox Series S",
+    img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/prize-xbox-series-x.png",
+    name: "Xbox Series X",
     highlight: true,
   },
   {
