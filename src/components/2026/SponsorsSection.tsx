@@ -9,13 +9,6 @@ type Partner = {
 
 const HOSTS: Partner[] = [
   {
-    name: "Microsoft",
-    url: "https://microsoft.com/ko-kr",
-    img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/sponsor-microsoft-cropped.png",
-    description:
-      "마이크로소프트는 온세상의 모든 사람들과 조직들이 더 많은 것들을 성취할 수 있도록 지원하는 것을 사명으로 삼고 있습니다. 따라서, 더 많은 개발자들이 GitHub Copilot을 통해 더 쉽게 앱을 개발하고 더 높은 생산성을 발휘할 수 있도록 클라우드와 AI 솔루션을 제공합니다.",
-  },
-  {
     name: "위민후코드코리아 (Womxn Who Code Korea)",
     url: "https://linktr.ee/wwcodeseoul",
     img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/sponsor-womxnwhocodekorea.png",
@@ -25,6 +18,13 @@ const HOSTS: Partner[] = [
 ];
 
 const SPONSORS: Partner[] = [
+  {
+    name: "Microsoft",
+    url: "https://microsoft.com/ko-kr",
+    img: "https://devrel-kr.github.io/event-landing-page/ticketaco/2026/06/lipcoding/images/sponsor-microsoft-cropped.png",
+    description:
+      "마이크로소프트는 온세상의 모든 사람들과 조직들이 더 많은 것들을 성취할 수 있도록 지원하는 것을 사명으로 삼고 있습니다. 따라서, 더 많은 개발자들이 GitHub Copilot을 통해 더 쉽게 앱을 개발하고 더 높은 생산성을 발휘할 수 있도록 클라우드와 AI 솔루션을 제공합니다.",
+  },
   {
     name: "메가존클라우드",
     url: "https://www.megazone.com",
