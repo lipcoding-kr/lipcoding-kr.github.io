@@ -150,6 +150,25 @@ const WinnersSection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-center mt-12"
+        >
+          <a
+            href="https://github.com/lipcoding-kr/lipcoding-competition-2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-white hover:text-mint transition-colors text-sm md:text-base font-semibold bg-white/5 hover:bg-white/10 border border-white/10 px-6 py-3 rounded-xl"
+          >
+            <Github className="w-5 h-5 shrink-0" />
+            대회 저장소 보기
+            <ExternalLink className="w-4 h-4 shrink-0" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
