@@ -1,5 +1,6 @@
 import VideoSection from "@/components/2026/VideoSection";
 import HeroSection from "@/components/2026/HeroSection";
+import WinnersSection from "@/components/2026/WinnersSection";
 import PastEventCard from "@/components/2026/PastEventCard";
 import KeynoteSection from "@/components/2026/KeynoteSection";
 import ScheduleSection from "@/components/2026/ScheduleSection";
@@ -12,6 +13,7 @@ const Index = () => {
     <main className="min-h-screen bg-ink-0">
       <VideoSection />
       <HeroSection />
+      <WinnersSection />
       <PastEventCard />
       <KeynoteSection />
       <ScheduleSection />
